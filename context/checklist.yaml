@@ -395,3 +395,75 @@ items:
   - TB
   source: inputs/clarifications/task-b-additional-info.md#line.55
   check: manual
+- id: R50
+  text: The hypothesis is testable and falsifiable using observable or measurable evidence.
+  verbatim: A useful scientific hypothesis **must be testable** (and falsifiable) using **observable or measurable empirical evidence**.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.134
+  check: manual
+- id: R51
+  text: The answer states which sampling strategy is used.
+  verbatim: '**Which** sampling strategy was used.'
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.120
+  check: manual
+- id: R52
+  text: The answer states why that sampling strategy was chosen, given the context and constraints.
+  verbatim: '**Why** it was selected given the research context and constraints.'
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.121
+  check: manual
+- id: R53
+  text: The answer states how the sampling choice may affect or limit generalisability.
+  verbatim: '**How** the sampling choice may affect or limit the generalisability of the findings.'
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.122
+  check: manual
+- id: R54
+  text: If convenience sampling is used, its limited generalisability is explicitly acknowledged.
+  verbatim: Researchers *must* explicitly acknowledge these limitations.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.104
+  check: manual
+- id: R55
+  text: The test is chosen by number of groups, between- or within-subjects design, and whether parametric assumptions hold, not arbitrarily.
+  verbatim: test selection depends on (1) **number of groups/conditions**, (2) **between- vs. within-subjects design**, and (3) **whether parametric assumptions (such as normality and level of measurement) hold**
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.191
+  check: manual
+- id: R56
+  text: If a within-subjects design is used, the order of conditions is counterbalanced.
+  verbatim: '**Counter-balancing** the order of conditions is essential in within-subjects studies to prevent **order effects**'
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.184
+  check: manual
+- id: R57
+  text: If a within-subjects design is used, every participant has a valid measurement for each condition.
+  verbatim: Every participant must have a valid measurement for each condition/measure.
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.183
+  check: manual
+- id: R58
+  text: The design and reporting plan guard against selection bias, cherry-picking, p-hacking, HARKing and misleading visualisations.
+  verbatim: researchers must guard against **selection bias, cherry-picking, $p$-hacking, HARKing, and misleading visualisations**
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/lectures/week-9-summary.md#line.233
+  check: manual
