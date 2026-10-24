@@ -1,0 +1,13 @@
+# REQUIREMENTS CHECKLIST (machine-readable). Every explicit must/should from the spec (and
+# clarifications), as checkable items. Written by enhance-rubric; checked by grade-* and export.
+# Validate with: python3 tools/check_rubric.py
+schema_version: 1
+generated: null
+items:
+  - id: R1
+    text: "Checkable restatement, e.g. 'Includes a labelled architecture diagram'"
+    verbatim: "Exact sentence from the source, e.g. 'You must include a labelled diagram…'"
+    strength: must              # must | should
+    applies_to: [Q1]            # question IDs or [ALL]
+    source: inputs/spec/brief.pdf#p.2
+    check: manual               # manual | wordcount | compliance | export

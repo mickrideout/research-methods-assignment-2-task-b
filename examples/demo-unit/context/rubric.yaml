@@ -1,0 +1,236 @@
+# ENHANCED RUBRIC (machine-readable). Written by enhance-rubric; consumed by graders.
+schema_version: 1
+generated: '2026-10-21'
+weight_unit: marks
+levels:
+- HD
+- D
+- C
+- P
+- N
+sources_sha256:
+  inputs/rubric/dsci9001-a2-rubric.docx: ebd5ce43ad869a52237120ed65c61e0bde31afffaefabb908630ed99829dd7aa
+  inputs/spec/dsci9001-a2-brief.pdf: d473a694d8577acce56c4e318a90a7e83a510228a378914c9146ef3961557c10
+  inputs/lectures/week03-reproducible-workflows.pptx: bc3ff8f15b43a09cdac87a49fb9aed5ef0e89eefaead016a82c7f57d86e8a757
+  inputs/feedback/a1-feedback.md: 54116a7f47442e452053f9945a001041d3423c4e577ce3d29edcbee945cfb940
+  inputs/clarifications/2026-10-20-forum-word-counts-and-edges.md: 3d3e8aa5f2b30a107dc917483568b71bb3a46e8bf1e8c8d142be8255e204e4f0
+  inputs/clarifications/2026-10-21-forum-tolerance-referencing.md: d98b71ca79d96f62d06b54bc678c0f5bb9004291394a914b6d7bac7d72e67bef
+  inputs/outcomes/dsci9001-ulos.md: b77e10c2e657c7267ff8f5db7a164b052acb7ea9b9c4146c645df487f7097f03
+  inputs/readings/nguyen2024-practical-reproducibility.pdf: 2f8225f9a075b4ee06f9612aabeb228529d6ad319eb3a139b3f44997da38385d
+criteria:
+- id: C1
+  name: Critical discussion of reproducibility practices
+  original_wording: C1 Critical discussion of reproducibility practices (Q1)
+  original_source: inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  weight: 40
+  applies_to:
+  - Q1
+  cross_cutting: false
+  learning_outcomes:
+  - ULO2
+  levels:
+  - level: HD
+    marks:
+    - 34
+    - 40
+    original: Insightful evaluation of two practices with well-supported limitations
+    observable:
+    - Each of the two practices is linked to the specific reproducibility problem it addresses
+    - Each practice has at least one specific limitation supported by a cited source
+    - Trade-offs are weighed (e.g. what the practice does not solve) rather than practices listed
+    - Draws on both the set reading and the Week 3 lecture
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/lectures/week03-reproducible-workflows.pptx#slide.4
+    - inputs/spec/dsci9001-a2-brief.pdf#p.1
+  - level: D
+    marks:
+    - 30
+    - 33.5
+    original: Sound evaluation of two practices with some limitations
+    observable:
+    - Two practices linked to problems; limitations stated but at most one is supported by a source
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  - level: C
+    marks:
+    - 26
+    - 29.5
+    original: Describes two practices with limited evaluation
+    observable:
+    - Two practices described accurately; limitations generic or missing (A1 feedback pattern)
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/feedback/a1-feedback.md#line.1
+  - level: P
+    marks:
+    - 20
+    - 25.5
+    original: Describes practices with little evaluation
+    observable:
+    - Practices described with little or no link to problems or limitations
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  - level: N
+    marks:
+    - 0
+    - 19.5
+    original: Practices missing or incorrect
+    observable:
+    - Fewer than two practices, or practices misdescribed
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  evidence:
+  - text: Explicit problem -> practice -> limitation chain for each practice
+    source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  - text: Citations to the set reading and the Week 3 lecture
+    source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  pitfalls:
+  - text: Listing practices without evaluating trade-offs
+    source: inputs/lectures/week03-reproducible-workflows.pptx#slide.4
+  - text: Limitations that are vague or unsupported
+    source: inputs/feedback/a1-feedback.md#line.1
+- id: C2
+  name: Correct implementation and evaluation of the smoother
+  original_wording: C2 Correct implementation and evaluation of the smoother (Q2)
+  original_source: inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  weight: 40
+  applies_to:
+  - Q2
+  cross_cutting: false
+  learning_outcomes:
+  - ULO1
+  levels:
+  - level: HD
+    marks:
+    - 34
+    - 40
+    original: Correct, tested implementation; RMSE results interpreted with insight
+    observable:
+    - Supplied tests pass with python3 -m pytest
+    - RMSE reported for window sizes 3 and 7 from a logged run
+    - Edge-handling approach stated explicitly
+    - Interpretation explains the bias-variance trade-off of window size, not just which number is lower
+    - At least one figure comparing raw, smoothed and reference series
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/spec/dsci9001-a2-brief.pdf#p.1
+    - inputs/clarifications/2026-10-20-forum-word-counts-and-edges.md#line.1
+    - inputs/lectures/week03-reproducible-workflows.pptx#slide.5
+  - level: D
+    marks:
+    - 30
+    - 33.5
+    original: Correct implementation; results interpreted
+    observable:
+    - Tests pass; both RMSE values reported and interpreted briefly; edge handling stated
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/clarifications/2026-10-20-forum-word-counts-and-edges.md#line.1
+  - level: C
+    marks:
+    - 26
+    - 29.5
+    original: Mostly correct implementation; results reported
+    observable:
+    - Minor defects (e.g. off-centre window); RMSE values reported without interpretation
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/lectures/week03-reproducible-workflows.pptx#slide.5
+  - level: P
+    marks:
+    - 20
+    - 25.5
+    original: Partially working implementation
+    observable:
+    - Some tests fail or only one window size reported
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  - level: N
+    marks:
+    - 0
+    - 19.5
+    original: Implementation missing or incorrect
+    observable:
+    - No working implementation
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  evidence:
+  - text: RMSE table for windows 3 and 7
+    source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  - text: Statement of edge handling
+    source: inputs/clarifications/2026-10-20-forum-word-counts-and-edges.md#line.1
+  pitfalls:
+  - text: Forgetting to state how edges are handled
+    source: inputs/lectures/week03-reproducible-workflows.pptx#slide.5
+  - text: Reporting a single number without interpretation
+    source: inputs/lectures/week03-reproducible-workflows.pptx#slide.5
+- id: C3
+  name: Communication, structure and referencing
+  original_wording: C3 Communication, structure and referencing (whole assignment)
+  original_source: inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  weight: 20
+  applies_to:
+  - ALL
+  cross_cutting: true
+  learning_outcomes:
+  - ULO3
+  levels:
+  - level: HD
+    marks:
+    - 17
+    - 20
+    original: Clear, concise and well structured; referencing accurate
+    observable:
+    - Within word limits (+/-10%)
+    - Every in-text citation matches the reference list (Cite Them Right Harvard)
+    - Australian English throughout
+    - Signposted structure; figure referred to in the text
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/spec/dsci9001-a2-brief.pdf#p.1
+    - inputs/feedback/a1-feedback.md#line.1
+  - level: D
+    marks:
+    - 15
+    - 16.5
+    original: Clear and structured; minor referencing errors
+    observable:
+    - One or two citation/format slips
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  - level: C
+    marks:
+    - 13
+    - 14.5
+    original: Generally clear; some referencing errors
+    observable:
+    - Several citation mismatches (A1 feedback pattern)
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+    - inputs/feedback/a1-feedback.md#line.1
+  - level: P
+    marks:
+    - 10
+    - 12.5
+    original: Understandable; frequent errors
+    observable:
+    - Frequent errors impede reading
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  - level: N
+    marks:
+    - 0
+    - 9.5
+    original: Unclear; referencing missing
+    observable:
+    - No references
+    sources:
+    - inputs/rubric/dsci9001-a2-rubric.docx#table.1
+  evidence:
+  - text: Reference list generated from the same keys as in-text citations
+    source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  pitfalls:
+  - text: In-text citations not matching the reference list
+    source: inputs/feedback/a1-feedback.md#line.1
+conflicts: []

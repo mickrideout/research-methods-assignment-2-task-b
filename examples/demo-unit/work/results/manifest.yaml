@@ -1,0 +1,48 @@
+# Results manifest: written by tools/run_logged.py; do not edit by hand.
+runs:
+- id: 20261019-095253-Q2-tests
+  name: Q2-tests
+  qid: Q2
+  command:
+  - python3
+  - -m
+  - pytest
+  - -q
+  cwd: work/code
+  started: '2026-10-19T09:52:53+11:00'
+  duration_s: 1.67
+  exit_code: 0
+  git_commit: null
+  git_dirty: null
+  log: work/results/logs/20261019-095253-Q2-tests.log
+  outputs: []
+  note: ''
+  status: ok
+- id: 20261019-095255-Q2-rmse-figure
+  name: Q2-rmse-figure
+  qid: Q2
+  command:
+  - python3
+  - run_q2.py
+  - --data
+  - ../../inputs/data/sensor.csv
+  - --table
+  - ../results/tables/Q2-rmse.md
+  - --figure
+  - ../results/figures/Q2-smoothing.png
+  cwd: work/code
+  started: '2026-10-19T09:52:55+11:00'
+  duration_s: 1.22
+  exit_code: 0
+  git_commit: null
+  git_dirty: null
+  log: work/results/logs/20261019-095255-Q2-rmse-figure.log
+  outputs:
+  - path: work/results/tables/Q2-rmse.md
+    sha256: 60d73d9d9931b590f3ac5f6c0a2629403c9c23159806bc77f6d0ce02e756e83b
+    exists: true
+  - path: work/results/figures/Q2-smoothing.png
+    sha256: d9fe1deefc692ad965457f87576401c979a52a330321bf15dc0a9927533461a1
+    exists: true
+  note: ''
+  status: ok

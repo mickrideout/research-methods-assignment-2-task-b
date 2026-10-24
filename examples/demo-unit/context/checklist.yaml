@@ -1,0 +1,94 @@
+# REQUIREMENTS CHECKLIST (machine-readable). Written by enhance-rubric.
+schema_version: 1
+generated: '2026-10-21'
+items:
+- id: R1
+  text: Q1 discusses exactly two reproducibility practices
+  verbatim: Critically discuss two practices that improve the reproducibility of data analyses.
+  strength: must
+  applies_to:
+  - Q1
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: manual
+- id: R2
+  text: Q1 evaluates at least one limitation per practice
+  verbatim: For each practice, explain what problem it addresses and evaluate at least one limitation.
+  strength: must
+  applies_to:
+  - Q1
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: manual
+- id: R3
+  text: Q1 draws on the set reading and the Week 3 lecture
+  verbatim: You must draw on the set reading and the Week 3 lecture.
+  strength: must
+  applies_to:
+  - Q1
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: manual
+- id: R4
+  text: Q2 reports RMSE for window sizes 3 and 7
+  verbatim: Report the root-mean-square error (RMSE) between the smoothed series and the reference signal for window
+    sizes 3 and 7, and interpret the result.
+  strength: must
+  applies_to:
+  - Q2
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: manual
+- id: R5
+  text: Q2 includes a figure comparing raw, smoothed and reference series
+  verbatim: You should include at least one figure comparing the raw, smoothed and reference series.
+  strength: should
+  applies_to:
+  - Q2
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: manual
+- id: R6
+  text: Code passes the supplied tests
+  verbatim: Your code must pass the supplied tests with python3 -m pytest.
+  strength: must
+  applies_to:
+  - Q2
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: manual
+- id: R7
+  text: Q2 states the edge-handling approach
+  verbatim: you must state which approach you used.
+  strength: must
+  applies_to:
+  - Q2
+  source: inputs/clarifications/2026-10-20-forum-word-counts-and-edges.md#line.1
+  check: manual
+- id: R8
+  text: Harvard (Cite Them Right) referencing
+  verbatim: You must use Harvard referencing.
+  strength: must
+  applies_to:
+  - ALL
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: compliance
+- id: R9
+  text: Single PDF named DSCI9001_A2_<studentID>.pdf plus code zip
+  verbatim: Submit a single PDF named DSCI9001_A2_<studentID>.pdf, plus a zip file of your code.
+  strength: must
+  applies_to:
+  - ALL
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: export
+- id: R10
+  text: Includes an "AI use statement" section at the end
+  verbatim: You must include an "AI use statement" section at the end of your submission.
+  strength: must
+  applies_to:
+  - ALL
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: compliance
+- id: R11
+  text: Word limits within +/-10%
+  verbatim: Word limits are approximate.
+  strength: must
+  applies_to:
+  - Q1
+  - Q2
+  source: inputs/spec/dsci9001-a2-brief.pdf#p.1
+  check: wordcount

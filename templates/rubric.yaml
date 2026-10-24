@@ -1,0 +1,52 @@
+# ENHANCED RUBRIC (machine-readable). Written by the enhance-rubric skill; consumed by graders.
+# Validate with: python3 tools/check_rubric.py
+# Source format everywhere: inputs/<path>#p.N  (or #slide.N, #para.N, #line.N)
+# Precedence: official rubric > spec > staff clarifications > lectures/readings > exemplars/feedback.
+schema_version: 1
+generated: null                 # ISO date
+weight_unit: marks              # marks (sum = assignment.total_marks) | percent (sum = 100)
+levels: [HD, D, C, P, N]        # performance levels, highest first (use the rubric's own names)
+sources_sha256: {}              # inputs/<path>: sha256 of every source consulted (from context/extracted/index.json)
+
+criteria:
+  - id: C1
+    name: "Criterion name"
+    original_wording: "Copied verbatim from the official rubric"
+    original_source: inputs/rubric/rubric.pdf#p.1
+    weight: 0
+    applies_to: [Q1]            # question IDs, or [ALL] for cross-cutting criteria
+    cross_cutting: false        # true for structure, referencing, presentation, etc.
+    learning_outcomes: []       # e.g. [ULO2] with source in evidence/pitfalls if inferred
+    levels:
+      - level: HD
+        marks: [0, 0]           # [min, max] within the criterion weight
+        original: "Verbatim level descriptor from the rubric, or null if the rubric has none"
+        observable:             # concrete, checkable differences from the level below
+          - "Names and applies at least two frameworks from Week 3 to the case"
+        sources: [inputs/rubric/rubric.pdf#p.1]
+      - level: D
+        marks: [0, 0]
+        original: null
+        observable: []
+        sources: []
+      - level: C
+        marks: [0, 0]
+        original: null
+        observable: []
+        sources: []
+      - level: P
+        marks: [0, 0]
+        original: null
+        observable: []
+        sources: []
+      - level: N
+        marks: [0, 0]
+        original: null
+        observable: []
+        sources: []
+    evidence:                   # what a marker looks for in the answer
+      - {text: "…", source: inputs/spec/brief.pdf#p.2}
+    pitfalls:                   # common ways answers lose marks here
+      - {text: "…", source: inputs/feedback/a1-feedback.pdf#p.1}
+
+conflicts: []                   # [{description, sources: [...], resolution: "official rubric wins: …"}]

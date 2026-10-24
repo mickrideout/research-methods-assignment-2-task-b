@@ -1,0 +1,13 @@
+# command: python3 run_q2.py --data ../../inputs/data/sensor.csv --table ../results/tables/Q2-rmse.md --figure ../results/figures/Q2-smoothing.png
+# cwd: work/code
+# started: 2026-10-19T09:52:55+11:00
+# git: None dirty=None
+# python: 3.11.16 (/home/mick/bin/anaconda/envs/scratch/bin/python3)
+# platform: Linux-7.0.0-31-generic-x86_64-with-glibc2.39
+# timeout_min: 30
+
+| Window | RMSE vs reference |
+|---|---|
+| raw (1) | 0.789 |
+| 3 | 0.517 |
+| 7 | 0.426 |

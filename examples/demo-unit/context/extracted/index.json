@@ -1,0 +1,101 @@
+{
+  "clarifications/2026-10-20-forum-word-counts-and-edges.md": {
+    "extracted": "context/extracted/clarifications/2026-10-20-forum-word-counts-and-edges.md.md",
+    "method": "text",
+    "mtime": 1792363798.1835291,
+    "sha256": "3d3e8aa5f2b30a107dc917483568b71bb3a46e8bf1e8c8d142be8255e204e4f0",
+    "size": 478,
+    "status": "ok",
+    "units": 1
+  },
+  "clarifications/2026-10-21-forum-tolerance-referencing.md": {
+    "extracted": "context/extracted/clarifications/2026-10-21-forum-tolerance-referencing.md.md",
+    "method": "text",
+    "mtime": 1792363874.3868897,
+    "sha256": "d98b71ca79d96f62d06b54bc678c0f5bb9004291394a914b6d7bac7d72e67bef",
+    "size": 295,
+    "status": "ok",
+    "units": 1
+  },
+  "data/sensor.csv": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1792363798.1843102,
+    "sha256": "61d9d2e1a7d7494982d35d2f6d12211b22fd9149e38b2017111b3443a67b2cbe",
+    "size": 1106,
+    "status": "indexed",
+    "units": null
+  },
+  "feedback/a1-feedback.md": {
+    "extracted": "context/extracted/feedback/a1-feedback.md.md",
+    "method": "text",
+    "mtime": 1792363798.183647,
+    "sha256": "54116a7f47442e452053f9945a001041d3423c4e577ce3d29edcbee945cfb940",
+    "size": 257,
+    "status": "ok",
+    "units": 1
+  },
+  "lectures/week03-reproducible-workflows.pptx": {
+    "extracted": "context/extracted/lectures/week03-reproducible-workflows.pptx.md",
+    "method": "pptx-xml",
+    "mtime": 1792363798.1832194,
+    "sha256": "bc3ff8f15b43a09cdac87a49fb9aed5ef0e89eefaead016a82c7f57d86e8a757",
+    "size": 34664,
+    "status": "ok",
+    "units": 5
+  },
+  "outcomes/dsci9001-ulos.md": {
+    "extracted": "context/extracted/outcomes/dsci9001-ulos.md.md",
+    "method": "text",
+    "mtime": 1792363798.183109,
+    "sha256": "b77e10c2e657c7267ff8f5db7a164b052acb7ea9b9c4146c645df487f7097f03",
+    "size": 254,
+    "status": "ok",
+    "units": 1
+  },
+  "readings/nguyen2024-practical-reproducibility.pdf": {
+    "extracted": "context/extracted/readings/nguyen2024-practical-reproducibility.pdf.md",
+    "method": "pdftotext",
+    "mtime": 1792363798.1833987,
+    "sha256": "2f8225f9a075b4ee06f9612aabeb228529d6ad319eb3a139b3f44997da38385d",
+    "size": 16842,
+    "status": "ok",
+    "units": 1
+  },
+  "rubric/dsci9001-a2-rubric.docx": {
+    "extracted": "context/extracted/rubric/dsci9001-a2-rubric.docx.md",
+    "method": "docx-xml",
+    "mtime": 1792363798.182984,
+    "sha256": "ebd5ce43ad869a52237120ed65c61e0bde31afffaefabb908630ed99829dd7aa",
+    "size": 10501,
+    "status": "ok",
+    "units": 2
+  },
+  "spec/dsci9001-a2-brief.pdf": {
+    "extracted": "context/extracted/spec/dsci9001-a2-brief.pdf.md",
+    "method": "pdftotext",
+    "mtime": 1792363798.1827998,
+    "sha256": "d473a694d8577acce56c4e318a90a7e83a510228a378914c9146ef3961557c10",
+    "size": 32721,
+    "status": "ok",
+    "units": 1
+  },
+  "starter/smoother.py": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1792363798.1839814,
+    "sha256": "7daf0a473d7018e70d544613846eb6c40a29c6aad87a3a2155b06cd1019ef953",
+    "size": 494,
+    "status": "indexed",
+    "units": null
+  },
+  "starter/tests/test_smoother.py": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1792363798.1838627,
+    "sha256": "24d57e4248c4664cd5ad3145face92872bc012a63b500225436edce50bc5ee7f",
+    "size": 512,
+    "status": "indexed",
+    "units": null
+  }
+}
