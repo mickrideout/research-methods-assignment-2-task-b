@@ -1,0 +1,59 @@
+# Requirements checklist: FIT5125 Task B: Working with Hypotheses
+
+> Every explicit "must" and "should" from the spec and staff clarifications.
+> Machine version: `context/checklist.yaml`. Tick items only with evidence.
+
+Generated 2026-10-25. 40 must, 9 should.
+Per-heading word limits are `manual` checks, because `tools/wordcount.py` counts only the TB total (550).
+
+| ID | Strength | Requirement | Verbatim | Applies to | Source | Check |
+|---|---|---|---|---|---|---|
+| R1 | must | Heading 1 hypothesis can realistically be tested with one or more statistical tests covered in the unit. | It should be something you can realistically test using one or more of the statistical tests covered in this unit. | TB | inputs/spec/task-b-spec.md#line.9 | manual |
+| R2 | must | The hypothesis relates to how social media influences the perceptions of young Australians about the housing crisis. | The topic is "How does social media influence the perceptions of young Australians regarding the housing crisis?" | TB | inputs/spec/task-b-spec.md#line.5 | manual |
+| R3 | must | The population is anyone aged 18–30 who does not yet own a home. | (Here "young Australian" refers to anyone aged 18-30 years who does not own a home yet) | TB | inputs/spec/task-b-spec.md#line.5 | manual |
+| R4 | must | Heading 1 (Proposed Hypothesis) is no more than 50 words. | (max. 50 words) | TB | inputs/spec/task-b-spec.md#line.9 | manual |
+| R5 | must | Heading 2 states the null hypothesis. | Write down the null hypothesis. | TB | inputs/spec/task-b-spec.md#line.10 | manual |
+| R6 | must | Heading 2 (Null Hypothesis) is no more than 50 words. | (max. 50 words) | TB | inputs/spec/task-b-spec.md#line.10 | manual |
+| R7 | must | Heading 3 names the independent variable and the dependent variable. | Write down the independent and dependent variables | TB | inputs/spec/task-b-spec.md#line.11 | manual |
+| R8 | must | Heading 3 lists at least three confounding variables. | as well as at least three confounding variables | TB | inputs/spec/task-b-spec.md#line.11 | manual |
+| R9 | must | Heading 3 is no more than 50 words. | (max. 50 words) | TB | inputs/spec/task-b-spec.md#line.11 | manual |
+| R10 | must | Heading 4 plan stays within a budget of AUD 1,000. | Imagine you had a budget of up to $1,000AUD | TB | inputs/spec/task-b-spec.md#line.12 | manual |
+| R11 | must | Heading 4 plan stays within 100 hours of the student's time. | (in addition to up to 100 hours of your time to conduct the study) | TB | inputs/spec/task-b-spec.md#line.12 | manual |
+| R12 | must | Heading 4 explains what data will be collected to investigate the hypothesis. | Explain what data you will collect to investigate this hypothesis | TB | inputs/spec/task-b-spec.md#line.12 | manual |
+| R13 | must | Heading 4 explains how the data would be obtained in a practical way. | how you would obtain the data in a practical fashion | TB | inputs/spec/task-b-spec.md#line.12 | manual |
+| R14 | must | Heading 4 (Data Collection) is no more than 100 words (resolved per OQ1; the spec's task list says 150). | 4. Data Collection (&lt; 100 words) | TB | inputs/spec/task-b-spec.md#line.25 | manual |
+| R15 | must | Heading 5 names the statistical test(s) expected to be used. | What statistical test(s) do you expect to conduct to test your hypothesis? | TB | inputs/spec/task-b-spec.md#line.13 | manual |
+| R16 | must | Heading 5 states the assumptions about the data. | Provide your assumptions of the data | TB | inputs/spec/task-b-spec.md#line.13 | manual |
+| R17 | must | Heading 5 explains why the test(s) are appropriate. | why such test(s) are appropriate | TB | inputs/spec/task-b-spec.md#line.13 | manual |
+| R18 | must | Heading 5 is no more than 150 words. | (max. 150 words) | TB | inputs/spec/task-b-spec.md#line.13 | manual |
+| R19 | must | Heading 6 is a paragraph explaining the study's limitations. | Write a paragraph that explains these limitations | TB | inputs/spec/task-b-spec.md#line.14 | manual |
+| R20 | must | Heading 6 explains potential future investigations. | as well as potential future investigations you might conduct | TB | inputs/spec/task-b-spec.md#line.14 | manual |
+| R21 | must | Heading 6 (Limitations) is no more than 100 words (resolved per OQ2; the heading in the spec says < 200). | (max. 100 words) | TB | inputs/spec/task-b-spec.md#line.14 | manual |
+| R22 | must | Heading 7 presents a different narrative that could have been presented from the results. | Present a different narrative that could have been presented from your results | TB | inputs/spec/task-b-spec.md#line.15 | manual |
+| R23 | must | Heading 7 says how data selection, methods or processes would be changed or manipulated to support that interpretation. | highlighting how the data needs to be selected, methods changed, or processes otherwise manipulated to support this different interpretation | TB | inputs/spec/task-b-spec.md#line.15 | manual |
+| R24 | must | Heading 7 (Alternative Narrative) is no more than 50 words (resolved per OQ3; the task list says 100). | 7. Alternative Narrative (&lt; 50 words) | TB | inputs/spec/task-b-spec.md#line.28 | manual |
+| R25 | must | The whole TB section is no more than 550 words in total (the sum of the per-heading limits). | There is a strict word limit for your answers as detailed above. | TB | inputs/spec/task-b-spec.md#line.32 | wordcount |
+| R26 | must | Text beyond any heading's limit will not be marked, so no heading may exceed its limit. | For submissions that exceed the specified word limits, only the parts of answers within the word limit will be awarded marks. | TB | inputs/spec/task-b-spec.md#line.32 | manual |
+| R27 | must | Submit one PDF document. | A PDF document, named "STUDENT-ID-Assignment-2-Task-B.pdf" containing your response to the assignment. | TB | inputs/spec/task-b-spec.md#line.19 | export |
+| R28 | must | The PDF is named STUDENT-ID-Assignment-2-Task-B.pdf (36809268-Assignment-2-Task-B.pdf). | named "STUDENT-ID-Assignment-2-Task-B.pdf" | TB | inputs/spec/task-b-spec.md#line.19 | export |
+| R29 | must | Use the prescribed headings 0 to 7 in order. | Use the following headings in your document: | TB | inputs/spec/task-b-spec.md#line.20 | compliance |
+| R30 | must | Heading 0 'Your Name & Student ID' is present and gives the student's name and ID. | 0. Your Name &amp; Student ID | TB | inputs/spec/task-b-spec.md#line.21 | compliance |
+| R31 | should | Any heading added beyond 0–7 is only an optional 'References' heading at the end. | plus an optional `References` heading at the end | TB | inputs/clarifications/task-b-additional-info.md#line.5 | compliance |
+| R32 | must | Work alone and follow Monash's academic integrity, plagiarism and collusion policies. | you must therefore work alone and follow Monash University's policies, procedures and regulations relating academic integrity, plagiarism and collusion | TB | inputs/spec/task-b-spec.md#line.37 | manual |
+| R33 | should | Ask any questions about the assignment as a public post on the Ed forum. | you should submit them as a public post to the Ed forum | TB | inputs/spec/task-b-spec.md#line.36 | manual |
+| R34 | must | The test choice and its assumptions are justified in relation to the proposed hypothesis and variables. | You **justify your choice and its assumptions** in relation to your proposed hypothesis and variables. | TB | inputs/clarifications/task-b-additional-info.md#line.12 | manual |
+| R35 | must | Heading 5 explains why the test suits the hypothesis and variables. | Explain why the test suits the proposed hypothesis and variables | TB | inputs/clarifications/Assignment-2-faq.md#line.69 | manual |
+| R36 | must | Heading 5 describes how the assumptions matter in choosing the test. | describe how those assumptions can be important in choosing the test | TB | inputs/clarifications/Assignment-2-faq.md#line.69 | manual |
+| R37 | must | The hypothesis does not contain 'statistically significant' or 'significantly higher' (or similar). | Do **not** write "FLoRA with GPT support will produce **significantly higher** task accuracy". | TB | inputs/clarifications/task-b-additional-info.md#line.91 | manual |
+| R38 | should | A directional hypothesis (higher, lower and so on) is used only when previous research or theory gives a reason to expect that direction. Otherwise use 'will differ from'. | use when previous research or theory gives a reason to expect a direction | TB | inputs/clarifications/task-b-additional-info.md#line.88 | manual |
+| R39 | must | The null hypothesis states no difference or no association. | it generally states no difference or no association | TB | inputs/clarifications/task-b-additional-info.md#line.94 | manual |
+| R40 | should | The hypothesis identifies the population, the intervention or condition, the comparison, and a measurable outcome (PICO). | O: is the outcome observable or measurable? | TB | inputs/clarifications/task-b-additional-info.md#line.100 | manual |
+| R41 | should | Important extraneous variables are recognised, with a note on how they will be controlled, measured or scoped. | Recognise important extraneous variables in your study design and consider how they will be controlled, measured, or scoped | TB | inputs/clarifications/task-b-additional-info.md#line.35 | manual |
+| R42 | must | The alternative narrative refers to specific results from the earlier Task B answers that would lead to a distinct conclusion. | It should refer to specific results from the previous Task B answers that would lead to a distinct alternative conclusion. | TB | inputs/clarifications/Assignment-2-faq.md#line.75 | manual |
+| R43 | must | The alternative narrative explains how the data, methods or processes would need to be manipulated to produce those results. | It should also explain how the data, method(s), and/or processes used in the previous questions would need to be manipulated to produce those specific results when testing the null hypothesis. | TB | inputs/clarifications/Assignment-2-faq.md#line.75 | manual |
+| R44 | must | The alternative narrative does not just describe a possible null-hypothesis test outcome or repeat a limitation. | Do not simply describe a possible null-hypothesis test outcome or repeat a study limitation. | TB | inputs/clarifications/Assignment-2-faq.md#line.77 | manual |
+| R45 | should | The future investigations in heading 6 address the limitations identified. | Discussion on future investigation should be related to addressing the limitations. | TB | inputs/clarifications/Assignment-2-faq.md#line.79 | manual |
+| R46 | should | If any source is cited, it is cited in APA 7th style. | you could cite using the APA 7 format | TB | inputs/clarifications/Assignment-2-faq.md#line.85 | compliance |
+| R47 | must | In-text citations are counted toward each heading's word limit. | \| Do in-text citations count toward each section's word limit? \| **Yes.** \| | TB | inputs/clarifications/task-b-additional-info.md#line.46 | wordcount |
+| R48 | should | Decisions are justified (why), not only described (what). | observed a lot of students focusing on describing what they had done without adequately explaining why | TB | inputs/clarifications/task-b-additional-info.md#line.54 | manual |
+| R49 | should | Reasoning is specific to this topic and design, not generic. | Task A reasoning was marked down when "too generic or unconvincing" | TB | inputs/clarifications/task-b-additional-info.md#line.55 | manual |

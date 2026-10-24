@@ -1,0 +1,407 @@
+{
+  "clarifications/Assignment-2-faq.md": {
+    "extracted": "context/extracted/clarifications/Assignment-2-faq.md.md",
+    "method": "text",
+    "mtime": 1792450316.9053571,
+    "sha256": "2316180501d29a8137da12feea7a5a1911420f842514e4492ecf932ee1e75b4a",
+    "size": 6884,
+    "status": "ok",
+    "units": 3
+  },
+  "clarifications/task-b-additional-info.md": {
+    "extracted": "context/extracted/clarifications/task-b-additional-info.md.md",
+    "method": "text",
+    "mtime": 1792884088.019556,
+    "sha256": "cca33b188a2daaaeb83b9f2910f4817dbbab05593fbc8707fc49deeeb4e3a93e",
+    "size": 12310,
+    "status": "ok",
+    "units": 3
+  },
+  "data/gpt-proposal-1.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044087.3469062,
+    "sha256": "62058da223545b32f08330fe65cc3f9aa8b076e3d46ee6e5c188f45149f5954c",
+    "size": 4099,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-10.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044162.5060697,
+    "sha256": "67318448e493dba1700752b59dc94f4d8eec9ee5913d2e3d66ade7dd6c22afb2",
+    "size": 3952,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-11.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044216.0378356,
+    "sha256": "86d18afcd0db90b1a0fbd6d9a5e3fe5f8a3f131972ed70d1bda0366e03f8cfbb",
+    "size": 4152,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-12.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044216.4398265,
+    "sha256": "87059f9f5cfd14a241eab38b4f8000bebcd4063913522b86bea3731a453eb004",
+    "size": 3992,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-13.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044216.8498173,
+    "sha256": "64c05b06df40f50ad11f6a0285ef6a56872e2a870ecfc54d3918d686595a6b81",
+    "size": 4118,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-14.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044347.2130308,
+    "sha256": "7dafce6c87ad22e1d10fb904efc041d54f5ce261eca7e3d63047c8ca6cb6f441",
+    "size": 3853,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-15.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044217.6727989,
+    "sha256": "81c45b38bd5b58bdda5958ecf31ea0bbd1874cacd39350e39a62a01aa5b48aee",
+    "size": 3997,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-16.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044280.6574178,
+    "sha256": "daff712304e5bf34cd8e56d192be1a90f14568f3bb9cc190b267d6728ae0e882",
+    "size": 3876,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-17.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044281.071409,
+    "sha256": "1f8e81e57c279381ec19c0f23403c517bc9ca8e1daf74b764c1c155545326dda",
+    "size": 4058,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-18.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044281.4854002,
+    "sha256": "c3f5d5499d9fcaf27532775f1245e1367e4d9a2290d7ec121bcb6c1852d79296",
+    "size": 3920,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-19.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044281.8913915,
+    "sha256": "044ead5f28976b01312298faec8d294fc3a8a5517cb7bea9db9b7b37361e604a",
+    "size": 4026,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-2.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044087.750896,
+    "sha256": "dda4d560a173db476528c817cef160dc54dfcde95e83c33c30bb134d5f430736",
+    "size": 3994,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-20.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044282.3123825,
+    "sha256": "62112037036aafa5cf50a9be2599fcab340b80f8442567cc0f8bcd536ef9667a",
+    "size": 4102,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-3.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044088.1568856,
+    "sha256": "605a53aadd03ad3f6ce96d13a075e8d799629b94b3c292de32f413a97b7a6139",
+    "size": 4153,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-4.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044088.5698752,
+    "sha256": "8f00b03d1b8c2a475fa83cf33f2ddf70888fef3d2fd10d6a95356c7812fbd4d3",
+    "size": 4180,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-5.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044088.9798648,
+    "sha256": "f046e9b133fdc72946db58e67cdda89026bfc328b131cc8416626ea54327edd4",
+    "size": 4085,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-6.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044160.8621087,
+    "sha256": "40acafbf56e5525495f60fd9319c741d07c66662fa092e621dcb170da62cd97e",
+    "size": 3989,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-7.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044161.2740989,
+    "sha256": "c78973f4d175782500cb403f8c977fd63ecae600877a7886040ad22d5a6d5b1f",
+    "size": 3994,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-8.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044161.691089,
+    "sha256": "70afe87cc2a297cdd4878be1905486f2023aad6607eff188c27c7a55f39cc855",
+    "size": 4111,
+    "status": "indexed",
+    "units": null
+  },
+  "data/gpt-proposal-9.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790044162.1000793,
+    "sha256": "b37a04e3eb9812d62c33b9b43545a8559d42ebad2dfb441eed5f1e1c36edf5de",
+    "size": 4064,
+    "status": "indexed",
+    "units": null
+  },
+  "data/judgement.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790045425.232583,
+    "sha256": "4e62f04581d4f2721121662f51a19ad66bf3b83c6112b675dfdfcff8234f251f",
+    "size": 46968,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-1.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042586.2654464,
+    "sha256": "82c732cee4f2aed4ca9b8319b8ad00036678c7e4e3890c71e0842cea09d773e6",
+    "size": 4388,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-10.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042893.5238233,
+    "sha256": "b05634e884dbd5e40fdb5b6e777989abe430f1e3780e581f11274b2697b25958",
+    "size": 3838,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-11.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042779.0999622,
+    "sha256": "22d1f64c7d704901d3615c293acc6832b1e2405432dfccaf30708ebe61169939",
+    "size": 3529,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-12.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042779.178377,
+    "sha256": "07eed0201b8d74e4d5aaa8c4f0e80cbe6a0e2e33de61579ea13fa3e79048d639",
+    "size": 3537,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-13.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042779.2279627,
+    "sha256": "df48c6e67badeab1feb7617804203d303d1d278d95d3186465bb92e3b0dc1139",
+    "size": 3548,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-14.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042779.2779627,
+    "sha256": "fbacb213d53865430f488a30fa6296d7f1c36ee5cfc01958266432e46ca89a4d",
+    "size": 3544,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-15.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042779.32783,
+    "sha256": "69039ea0edac00d976c6cb3f448ec34ae6669e997aa398515f1cce8a2528ecab",
+    "size": 3660,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-16.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042893.5853083,
+    "sha256": "ba1ee613edb36868b564c62fd163620ca61d7bfe759b8575755350ae2cebed22",
+    "size": 3666,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-17.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042832.7771316,
+    "sha256": "7edbfbbde0f73ce04ed8d4589fa9c3f83666d59ff0b2e62784c2b5ad8e677839",
+    "size": 3597,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-18.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042832.8502393,
+    "sha256": "9f89306e19df93b598d9a2db345c6e5de7d1487a1511a0c66ddc134e3adace82",
+    "size": 3636,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-19.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042893.6673083,
+    "sha256": "4ef8059efe5fddccd28fb7e8dd64afe906d3dcd4ae607f468c7c0ae35141926a",
+    "size": 3791,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-2.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042651.3685007,
+    "sha256": "ea71d089982f2df39f588461e63efc0e046c7280202598070bf41c8e5cebbe45",
+    "size": 3829,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-20.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042832.9795475,
+    "sha256": "a53f770e0520f159a4384daef438ff85f95e4b509eac0424b90a1f8407728492",
+    "size": 3934,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-3.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042724.994393,
+    "sha256": "a2a267c6d99ca5f2af1e7840d044b06dd07a8eefecb5c53f5c1ad6a547cb8caf",
+    "size": 3862,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-4.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042924.2386532,
+    "sha256": "ef7472d8623e33582f10b11515a0cdced3e17c2db3c757738a5fa420e481af96",
+    "size": 3836,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-5.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042725.139674,
+    "sha256": "d58dec206eefde8b73a1d1a215e1084ac540e98c1586a613e01d959b34e607ba",
+    "size": 3650,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-6.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042725.1987782,
+    "sha256": "396322bc70315759b8eb1dd8f9b12eade456de18132b3054038228e65c31414c",
+    "size": 3708,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-7.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042893.4488564,
+    "sha256": "1ef2a9fd6a7a7adb23952e8f8d034ea6c044e739a866ab2527ec60e29e7fda70",
+    "size": 3720,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-8.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042707.358385,
+    "sha256": "96a31c56c0a2f9b6ea94fa5e07ed91429c329831aea7bfb8de72b032c0e0f94c",
+    "size": 3850,
+    "status": "indexed",
+    "units": null
+  },
+  "data/proposal-9.md": {
+    "extracted": null,
+    "method": null,
+    "mtime": 1790042707.4118795,
+    "sha256": "d41cd3e4af46d8e138c47e5c50889c355c2083d2cee8c2ddcad4484f796fe5a0",
+    "size": 3873,
+    "status": "indexed",
+    "units": null
+  },
+  "rubric/task-b-rubric.md": {
+    "extracted": "context/extracted/rubric/task-b-rubric.md.md",
+    "method": "text",
+    "mtime": 1792883678.2226784,
+    "sha256": "6510bffa98dc9660904f490ed60f83f416a5d9a001195fd17aaabe6c478c4804",
+    "size": 6074,
+    "status": "ok",
+    "units": 1
+  },
+  "spec/task-b-spec.md": {
+    "extracted": "context/extracted/spec/task-b-spec.md.md",
+    "method": "text",
+    "mtime": 1792883332.268768,
+    "sha256": "8594ecdd5ef039255faf49dedeb0b011add0f836cce8fe2da943428f3b3c261e",
+    "size": 4227,
+    "status": "ok",
+    "units": 1
+  }
+}

@@ -1,0 +1,397 @@
+# REQUIREMENTS CHECKLIST (machine-readable). Written by enhance-rubric; checked by grade-* and export.
+# Validate with: python3 tools/check_rubric.py
+schema_version: 1
+generated: '2026-10-25'
+items:
+- id: R1
+  text: Heading 1 hypothesis can realistically be tested with one or more statistical tests covered in the unit.
+  verbatim: It should be something you can realistically test using one or more of the statistical tests covered in this unit.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.9
+  check: manual
+- id: R2
+  text: The hypothesis relates to how social media influences the perceptions of young Australians about the housing crisis.
+  verbatim: The topic is "How does social media influence the perceptions of young Australians regarding the housing crisis?"
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.5
+  check: manual
+- id: R3
+  text: The population is anyone aged 18–30 who does not yet own a home.
+  verbatim: (Here "young Australian" refers to anyone aged 18-30 years who does not own a home yet)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.5
+  check: manual
+- id: R4
+  text: Heading 1 (Proposed Hypothesis) is no more than 50 words.
+  verbatim: (max. 50 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.9
+  check: manual
+- id: R5
+  text: Heading 2 states the null hypothesis.
+  verbatim: Write down the null hypothesis.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.10
+  check: manual
+- id: R6
+  text: Heading 2 (Null Hypothesis) is no more than 50 words.
+  verbatim: (max. 50 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.10
+  check: manual
+- id: R7
+  text: Heading 3 names the independent variable and the dependent variable.
+  verbatim: Write down the independent and dependent variables
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.11
+  check: manual
+- id: R8
+  text: Heading 3 lists at least three confounding variables.
+  verbatim: as well as at least three confounding variables
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.11
+  check: manual
+- id: R9
+  text: Heading 3 is no more than 50 words.
+  verbatim: (max. 50 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.11
+  check: manual
+- id: R10
+  text: Heading 4 plan stays within a budget of AUD 1,000.
+  verbatim: Imagine you had a budget of up to $1,000AUD
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.12
+  check: manual
+- id: R11
+  text: Heading 4 plan stays within 100 hours of the student's time.
+  verbatim: (in addition to up to 100 hours of your time to conduct the study)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.12
+  check: manual
+- id: R12
+  text: Heading 4 explains what data will be collected to investigate the hypothesis.
+  verbatim: Explain what data you will collect to investigate this hypothesis
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.12
+  check: manual
+- id: R13
+  text: Heading 4 explains how the data would be obtained in a practical way.
+  verbatim: how you would obtain the data in a practical fashion
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.12
+  check: manual
+- id: R14
+  text: Heading 4 (Data Collection) is no more than 100 words (resolved per OQ1; the spec's task list says 150).
+  verbatim: 4. Data Collection (&lt; 100 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.25
+  check: manual
+- id: R15
+  text: Heading 5 names the statistical test(s) expected to be used.
+  verbatim: What statistical test(s) do you expect to conduct to test your hypothesis?
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.13
+  check: manual
+- id: R16
+  text: Heading 5 states the assumptions about the data.
+  verbatim: Provide your assumptions of the data
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.13
+  check: manual
+- id: R17
+  text: Heading 5 explains why the test(s) are appropriate.
+  verbatim: why such test(s) are appropriate
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.13
+  check: manual
+- id: R18
+  text: Heading 5 is no more than 150 words.
+  verbatim: (max. 150 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.13
+  check: manual
+- id: R19
+  text: Heading 6 is a paragraph explaining the study's limitations.
+  verbatim: Write a paragraph that explains these limitations
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.14
+  check: manual
+- id: R20
+  text: Heading 6 explains potential future investigations.
+  verbatim: as well as potential future investigations you might conduct
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.14
+  check: manual
+- id: R21
+  text: Heading 6 (Limitations) is no more than 100 words (resolved per OQ2; the heading in the spec says < 200).
+  verbatim: (max. 100 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.14
+  check: manual
+- id: R22
+  text: Heading 7 presents a different narrative that could have been presented from the results.
+  verbatim: Present a different narrative that could have been presented from your results
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.15
+  check: manual
+- id: R23
+  text: Heading 7 says how data selection, methods or processes would be changed or manipulated to support that interpretation.
+  verbatim: highlighting how the data needs to be selected, methods changed, or processes otherwise manipulated to support this different interpretation
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.15
+  check: manual
+- id: R24
+  text: Heading 7 (Alternative Narrative) is no more than 50 words (resolved per OQ3; the task list says 100).
+  verbatim: 7. Alternative Narrative (&lt; 50 words)
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.28
+  check: manual
+- id: R25
+  text: The whole TB section is no more than 550 words in total (the sum of the per-heading limits).
+  verbatim: There is a strict word limit for your answers as detailed above.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.32
+  check: wordcount
+- id: R26
+  text: Text beyond any heading's limit will not be marked, so no heading may exceed its limit.
+  verbatim: For submissions that exceed the specified word limits, only the parts of answers within the word limit will be awarded marks.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.32
+  check: manual
+- id: R27
+  text: Submit one PDF document.
+  verbatim: A PDF document, named "STUDENT-ID-Assignment-2-Task-B.pdf" containing your response to the assignment.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.19
+  check: export
+- id: R28
+  text: The PDF is named STUDENT-ID-Assignment-2-Task-B.pdf (36809268-Assignment-2-Task-B.pdf).
+  verbatim: named "STUDENT-ID-Assignment-2-Task-B.pdf"
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.19
+  check: export
+- id: R29
+  text: Use the prescribed headings 0 to 7 in order.
+  verbatim: 'Use the following headings in your document:'
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.20
+  check: compliance
+- id: R30
+  text: Heading 0 'Your Name & Student ID' is present and gives the student's name and ID.
+  verbatim: 0. Your Name &amp; Student ID
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.21
+  check: compliance
+- id: R31
+  text: Any heading added beyond 0–7 is only an optional 'References' heading at the end.
+  verbatim: plus an optional `References` heading at the end
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.5
+  check: compliance
+- id: R32
+  text: Work alone and follow Monash's academic integrity, plagiarism and collusion policies.
+  verbatim: you must therefore work alone and follow Monash University's policies, procedures and regulations relating academic integrity, plagiarism and collusion
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.37
+  check: manual
+- id: R33
+  text: Ask any questions about the assignment as a public post on the Ed forum.
+  verbatim: you should submit them as a public post to the Ed forum
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/spec/task-b-spec.md#line.36
+  check: manual
+- id: R34
+  text: The test choice and its assumptions are justified in relation to the proposed hypothesis and variables.
+  verbatim: You **justify your choice and its assumptions** in relation to your proposed hypothesis and variables.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.12
+  check: manual
+- id: R35
+  text: Heading 5 explains why the test suits the hypothesis and variables.
+  verbatim: Explain why the test suits the proposed hypothesis and variables
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.69
+  check: manual
+- id: R36
+  text: Heading 5 describes how the assumptions matter in choosing the test.
+  verbatim: describe how those assumptions can be important in choosing the test
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.69
+  check: manual
+- id: R37
+  text: The hypothesis does not contain 'statistically significant' or 'significantly higher' (or similar).
+  verbatim: Do **not** write "FLoRA with GPT support will produce **significantly higher** task accuracy".
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.91
+  check: manual
+- id: R38
+  text: A directional hypothesis (higher, lower and so on) is used only when previous research or theory gives a reason to expect that direction. Otherwise use 'will differ from'.
+  verbatim: use when previous research or theory gives a reason to expect a direction
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.88
+  check: manual
+- id: R39
+  text: The null hypothesis states no difference or no association.
+  verbatim: it generally states no difference or no association
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.94
+  check: manual
+- id: R40
+  text: The hypothesis identifies the population, the intervention or condition, the comparison, and a measurable outcome (PICO).
+  verbatim: 'O: is the outcome observable or measurable?'
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.100
+  check: manual
+- id: R41
+  text: Important extraneous variables are recognised, with a note on how they will be controlled, measured or scoped.
+  verbatim: Recognise important extraneous variables in your study design and consider how they will be controlled, measured, or scoped
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.35
+  check: manual
+- id: R42
+  text: The alternative narrative refers to specific results from the earlier Task B answers that would lead to a distinct conclusion.
+  verbatim: It should refer to specific results from the previous Task B answers that would lead to a distinct alternative conclusion.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.75
+  check: manual
+- id: R43
+  text: The alternative narrative explains how the data, methods or processes would need to be manipulated to produce those results.
+  verbatim: It should also explain how the data, method(s), and/or processes used in the previous questions would need to be manipulated to produce those specific results when testing the null hypothesis.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.75
+  check: manual
+- id: R44
+  text: The alternative narrative does not just describe a possible null-hypothesis test outcome or repeat a limitation.
+  verbatim: Do not simply describe a possible null-hypothesis test outcome or repeat a study limitation.
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.77
+  check: manual
+- id: R45
+  text: The future investigations in heading 6 address the limitations identified.
+  verbatim: Discussion on future investigation should be related to addressing the limitations.
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.79
+  check: manual
+- id: R46
+  text: If any source is cited, it is cited in APA 7th style.
+  verbatim: you could cite using the APA 7 format
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/Assignment-2-faq.md#line.85
+  check: compliance
+- id: R47
+  text: In-text citations are counted toward each heading's word limit.
+  verbatim: '| Do in-text citations count toward each section''s word limit? | **Yes.** |'
+  strength: must
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.46
+  check: wordcount
+- id: R48
+  text: Decisions are justified (why), not only described (what).
+  verbatim: observed a lot of students focusing on describing what they had done without adequately explaining why
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.54
+  check: manual
+- id: R49
+  text: Reasoning is specific to this topic and design, not generic.
+  verbatim: Task A reasoning was marked down when "too generic or unconvincing"
+  strength: should
+  applies_to:
+  - TB
+  source: inputs/clarifications/task-b-additional-info.md#line.55
+  check: manual

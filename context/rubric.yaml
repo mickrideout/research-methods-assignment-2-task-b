@@ -1,0 +1,537 @@
+# ENHANCED RUBRIC (machine-readable). Written by the enhance-rubric skill; consumed by graders.
+# Validate with: python3 tools/check_rubric.py
+# Precedence: official rubric > spec > staff clarifications > lectures/readings > exemplars/feedback.
+# Single answered question TB; criteria map to the prescribed headings via `headings`.
+schema_version: 1
+generated: '2026-10-25'
+weight_unit: marks
+levels:
+- HD
+- D
+- C
+- P
+- N
+sources_sha256:
+  inputs/rubric/task-b-rubric.md: 6510bffa98dc9660904f490ed60f83f416a5d9a001195fd17aaabe6c478c4804
+  inputs/spec/task-b-spec.md: 8594ecdd5ef039255faf49dedeb0b011add0f836cce8fe2da943428f3b3c261e
+  inputs/clarifications/Assignment-2-faq.md: 2316180501d29a8137da12feea7a5a1911420f842514e4492ecf932ee1e75b4a
+  inputs/clarifications/task-b-additional-info.md: cca33b188a2daaaeb83b9f2910f4817dbbab05593fbc8707fc49deeeb4e3a93e
+criteria:
+- id: C1
+  name: Hypothesis and null hypothesis
+  original_wording: Hypothesis and null hypothesis are relevant to the given topic (2 marks)
+  original_source: inputs/rubric/task-b-rubric.md#line.6
+  weight: 2
+  applies_to:
+  - TB
+  cross_cutting: false
+  headings: 1–2
+  learning_outcomes:
+  - ULO1
+  levels:
+  - level: HD
+    marks:
+    - 2
+    - 2
+    original: The hypothesis and null hypothesis are correctly formulated, clearly linked, and fully testable. Variables are explicitly named, the predicted relationship is clearly stated, and the null hypothesis explicitly states the absence of that relationship as a logical counterpart. (2 marks)
+    observable:
+    - 'Heading 1 names all four PICO elements: the population (Australians aged 18–30 who do not own a home), the social-media exposure or condition, what it is compared with, and a measurable outcome about housing-crisis perceptions.'
+    - 'The predicted relationship is explicit: a direction word (higher, lower, greater, fewer) or ''will differ from''. Directional wording is used only where a reason for the direction exists.'
+    - Heading 2 uses the same population and variables as heading 1 and states no difference or no association between them, as an exact logical counterpart.
+    - The outcome is measurable with the instrument in heading 4 and testable with the test named in heading 5.
+    - Neither statement contains 'significant', 'significantly' or 'statistically significant'.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.6
+    - inputs/spec/task-b-spec.md#line.5
+    - inputs/spec/task-b-spec.md#line.9
+    - inputs/spec/task-b-spec.md#line.10
+    - inputs/clarifications/task-b-additional-info.md#line.76
+    - inputs/clarifications/task-b-additional-info.md#line.86
+    - inputs/clarifications/task-b-additional-info.md#line.88
+    - inputs/clarifications/task-b-additional-info.md#line.91
+    - inputs/clarifications/task-b-additional-info.md#line.94
+    - inputs/clarifications/task-b-additional-info.md#line.103
+  - level: D
+    marks:
+    - 1.5
+    - 1.5
+    original: The hypothesis and null hypothesis are clearly stated, include named variables, and are logically paired. The predicted relationship and absence of relationship are evident, although wording, precision, or testability could be further refined. (1.5 marks)
+    observable:
+    - The population, exposure, comparison and outcome are all named, but at least one is imprecise (e.g. 'social media use' with no platform or content type, or 'perceptions' with no measurable construct).
+    - The predicted relationship is evident, but the wording could be sharper.
+    - H0 is logically paired with H1 but not an exact mirror (e.g. a slightly different population scope or outcome wording).
+    - Testability is evident, but measurement or precision could be refined.
+    - The hypothesis may include 'significantly'.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.6
+    - inputs/clarifications/task-b-additional-info.md#line.91
+    - inputs/clarifications/task-b-additional-info.md#line.97
+  - level: C
+    marks:
+    - 1.25
+    - 1.25
+    original: A relevant hypothesis and null hypothesis are provided and broadly related to each other and the topic. However, variables are implicit, the predicted relationship (or absence of relationship) is unclear, and testability is only partially evident. (1.25 marks)
+    observable:
+    - Both statements relate to the topic and to each other, but the variables are implicit (e.g. 'social media influences young people's housing views').
+    - 'The predicted relationship (or its absence in H0) is unclear: no direction, no comparison, or no stated difference or association.'
+    - H0 is broadly related to H1 but does not clearly name the absent relationship.
+    - 'Testability is only partly evident: it is unclear what would be measured or compared.'
+    - Wording problems (e.g. 'significantly') may also be present.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.6
+    - inputs/clarifications/task-b-additional-info.md#line.76
+    - inputs/clarifications/task-b-additional-info.md#line.97
+  - level: P
+    marks:
+    - 1
+    - 1
+    original: A hypothesis and/or null hypothesis is provided, but is incorrectly structured, not clearly testable, or not relevant to the topic. The null hypothesis may not logically correspond to the alternative hypothesis. (1 mark)
+    observable:
+    - 'At least one statement is wrongly structured: a question instead of a prediction, a statement of fact, or several predictions bundled together.'
+    - There is no testable prediction, or the topic is missed (not young non-homeowning Australians, social media or housing perceptions).
+    - H0 is not the logical counterpart of H1 (e.g. it states the opposite direction or names different variables).
+    - No measurable outcome is stated.
+    - Pass level requires at least an attempted hypothesis or null hypothesis.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.6
+    - inputs/spec/task-b-spec.md#line.5
+    - inputs/clarifications/task-b-additional-info.md#line.94
+  - level: N
+    marks:
+    - 0
+    - 0
+    original: Neither a valid hypothesis nor a valid null hypothesis is provided. (0 marks)
+    observable:
+    - Neither a valid hypothesis (heading 1) nor a valid null hypothesis (heading 2) is present.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.6
+  evidence:
+  - text: 'Heading 1 can be read as a PICO sentence: population, intervention or exposure, comparison, and outcome.'
+    source: inputs/clarifications/task-b-additional-info.md#line.86
+  - text: Heading 1 is something that can realistically be tested with a statistical test covered in the unit, and heading 5 names that test.
+    source: inputs/spec/task-b-spec.md#line.9
+  - text: Heading 2 states 'no difference' or 'no association' using the same variables as heading 1.
+    source: inputs/clarifications/task-b-additional-info.md#line.94
+  - text: 'The population matches the spec''s definition: aged 18–30 and does not yet own a home.'
+    source: inputs/spec/task-b-spec.md#line.5
+  - text: Heading 1 is within 50 words and heading 2 is within 50 words.
+    source: inputs/spec/task-b-spec.md#line.9
+  pitfalls:
+  - text: Writing 'significantly higher' or 'statistically significant' in the hypothesis. Significance is a conclusion from the test, not a prediction.
+    source: inputs/clarifications/task-b-additional-info.md#line.91
+  - text: Giving a direction (higher or lower) with no reason to expect it. Use 'will differ from' when there is no basis for a direction.
+    source: inputs/clarifications/task-b-additional-info.md#line.88
+  - text: Defining the population loosely (e.g. 'young people' or 'Gen Z') instead of Australians aged 18–30 who do not own a home.
+    source: inputs/spec/task-b-spec.md#line.5
+  - text: H0 that is not the counterpart of H1, for example one that predicts the opposite direction instead of no difference.
+    source: inputs/rubric/task-b-rubric.md#line.6
+  - text: Going over 50 words. Words past the limit are not marked.
+    source: inputs/spec/task-b-spec.md#line.32
+- id: C2
+  name: Variables
+  original_wording: Variables (2 marks)
+  original_source: inputs/rubric/task-b-rubric.md#line.7
+  weight: 2
+  applies_to:
+  - TB
+  cross_cutting: false
+  headings: '3'
+  learning_outcomes:
+  - ULO1
+  levels:
+  - level: HD
+    marks:
+    - 2
+    - 2
+    original: Independent, dependent, and at least three confounding variables are correctly identified. All are clearly appropriate to the hypothesis and the confounding variables are relevant to the topic. (2 marks)
+    observable:
+    - The IV and DV are named with the same wording as in heading 1, and their roles are correct (the IV is the social-media exposure or condition; the DV is the housing-perception outcome).
+    - At least three confounding variables are listed.
+    - Each confounder is a factor that could plausibly also affect the outcome for young non-homeowning Australians (e.g. income, location or local housing market, current living arrangement). None is generic.
+    - Where words allow, the answer says how the confounders will be controlled, measured or scoped.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.7
+    - inputs/spec/task-b-spec.md#line.11
+    - inputs/clarifications/task-b-additional-info.md#line.95
+    - inputs/clarifications/task-b-additional-info.md#line.35
+  - level: D
+    marks:
+    - 1.5
+    - 1.5
+    original: Independent, dependent, and at least three confounding variables are identified and appropriate to the hypothesis. Relevance of some confounding variables to the topic is not clear. (1.5 marks)
+    observable:
+    - The IV and DV are correct and match the hypothesis.
+    - At least three confounders are listed.
+    - At least one confounder has no clear link to this topic (e.g. a generic 'personality' or 'mood' with no housing or social-media connection).
+    - Control or measurement is not addressed.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.7
+    - inputs/clarifications/task-b-additional-info.md#line.55
+  - level: C
+    marks:
+    - 1.25
+    - 1.25
+    original: Independent and dependent variables are correctly identified and appropriate to the hypothesis. Fewer than three confounding variables are provided, or the confounding variables listed are not relevant to this topic. (1.25 marks)
+    observable:
+    - The IV and DV are correct and match the hypothesis.
+    - Fewer than three confounders are given, or the confounders listed are not relevant to this topic.
+    - Topic relevance of the confounders is absent.
+    - Control or measurement is not addressed.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.7
+  - level: P
+    marks:
+    - 1
+    - 1
+    original: Independent and dependent variables are identified, but are not appropriate to the hypothesis or their roles are confused. No confounding variables identified. (1 mark)
+    observable:
+    - The IV and DV are named, but they do not match the hypothesis or their roles are swapped.
+    - No confounding variables are given.
+    - Topic relevance is not applicable because no confounders are listed.
+    - Control or measurement is not addressed.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.7
+  - level: N
+    marks:
+    - 0
+    - 0
+    original: No variables identified. (0 marks)
+    observable:
+    - No variables are identified under heading 3.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.7
+  evidence:
+  - text: Labelled IV and DV that match the variables named in headings 1 and 2.
+    source: inputs/rubric/task-b-rubric.md#line.7
+  - text: At least three named confounders.
+    source: inputs/spec/task-b-spec.md#line.11
+  - text: Each confounder is plausibly linked to housing perceptions or social-media use among Australians aged 18–30 who do not own a home.
+    source: inputs/rubric/task-b-rubric.md#line.7
+  - text: Confounders are recognised and, where possible, the answer says how they will be controlled, measured or scoped.
+    source: inputs/clarifications/task-b-additional-info.md#line.35
+  pitfalls:
+  - text: Confounders that are generic or not linked to the topic. The rubric's D level is defined by unclear topic relevance.
+    source: inputs/rubric/task-b-rubric.md#line.7
+  - text: Listing only two confounders. 'At least three' is required.
+    source: inputs/spec/task-b-spec.md#line.11
+  - text: IV and DV wording that drifts from the hypothesis, which makes the roles look confused.
+    source: inputs/rubric/task-b-rubric.md#line.7
+  - text: Explaining each confounder in prose and running past the 50-word limit.
+    source: inputs/spec/task-b-spec.md#line.32
+- id: C3
+  name: Data Collection
+  original_wording: Data Collection (2 marks)
+  original_source: inputs/rubric/task-b-rubric.md#line.8
+  weight: 2
+  applies_to:
+  - TB
+  cross_cutting: false
+  headings: '4'
+  learning_outcomes:
+  - ULO1
+  - ULO4
+  levels:
+  - level: HD
+    marks:
+    - 2
+    - 2
+    original: A feasible and clearly described data collection plan that is closely related to the hypothesis. Sampling strategy, recruitment approach, location, equipment, and processes are all outlined within a realistic $\$1000$ budget and the $100\text{ hour}$ time allocation. (2 marks)
+    observable:
+    - 'Feasibility: the plan could be run by one person within the stated resources.'
+    - 'Practical detail: the sampling strategy (target sample and inclusion of 18–30-year-old non-homeowners), the recruitment approach, the location (online or physical), the equipment or instruments (e.g. survey platform, named scales) and the process steps are all stated.'
+    - 'Link to hypothesis: the data collected measure the IV, the DV and the confounders from heading 3.'
+    - 'Budget and time: costs are itemised and total no more than AUD 1,000, and hours are allocated to stages and total no more than 100. Both are integrated into the plan, not just mentioned.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.8
+    - inputs/spec/task-b-spec.md#line.12
+    - inputs/spec/task-b-spec.md#line.5
+  - level: D
+    marks:
+    - 1.5
+    - 1.5
+    original: A feasible and practically detailed plan is described with clear relevance to the hypothesis. Sampling, recruitment, processes, and equipment are addressed, but the $\$1000$ budget and the $100\text{ hour}$ time allocation are not clearly integrated into the plan. (1.5 marks)
+    observable:
+    - 'Feasibility: feasible.'
+    - 'Practical detail: sampling, recruitment, processes and equipment are all addressed.'
+    - 'Link to hypothesis: clearly relevant to the hypothesis.'
+    - 'Budget and time: the AUD 1,000 and 100 hours are mentioned but not clearly integrated (e.g. no cost or hour breakdown, or figures not tied to plan steps).'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.8
+    - inputs/spec/task-b-spec.md#line.12
+  - level: C
+    marks:
+    - 1.25
+    - 1.25
+    original: A feasible method is described and linked to the hypothesis. The plan is general and lacks practical detail on sampling, recruitment, processes, or equipment. No reference to the $\$1000$ budget and the time allocation ($100\text{ hours}$). (1.25 marks)
+    observable:
+    - 'Feasibility: feasible.'
+    - 'Practical detail: general. At least one of sampling, recruitment, processes or equipment lacks practical detail.'
+    - 'Link to hypothesis: linked to the hypothesis.'
+    - 'Budget and time: neither the AUD 1,000 budget nor the 100-hour allocation is referred to.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.8
+  - level: P
+    marks:
+    - 1
+    - 1
+    original: A data collection method is described, but it is not feasible, OR not related to the hypothesis, OR makes no reference to the $\$1000$ budget and the time allocated ($100\text{ hours}$). (1 mark)
+    observable:
+    - 'Feasibility: a method is described but is not feasible (e.g. it needs more than AUD 1,000 or 100 hours, or the sample is unobtainable).'
+    - 'Practical detail: may be minimal.'
+    - 'Link to hypothesis: OR the method is unrelated to the hypothesis.'
+    - 'Budget and time: OR there is no reference to the budget and time allocation.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.8
+    - inputs/spec/task-b-spec.md#line.12
+  - level: N
+    marks:
+    - 0
+    - 0
+    original: Details on data collection not provided. (0 marks)
+    observable:
+    - No data-collection details are provided under heading 4.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.8
+  evidence:
+  - text: A dollar figure (or itemised costs) within AUD 1,000 and an hour figure (or allocation) within 100 hours.
+    source: inputs/spec/task-b-spec.md#line.12
+  - text: Sampling strategy, recruitment approach, location, equipment and processes are each identifiable.
+    source: inputs/rubric/task-b-rubric.md#line.8
+  - text: The data described would measure the variables in heading 3.
+    source: inputs/rubric/task-b-rubric.md#line.8
+  - text: Practical detail on how the data would be obtained, not just what data.
+    source: inputs/spec/task-b-spec.md#line.12
+  pitfalls:
+  - text: Leaving out the AUD 1,000 budget or the 100 hours. The rubric's C level is defined by 'No reference to the $1000 budget and the time allocation', so this caps the criterion at 1.25/2 even for a detailed plan.
+    source: inputs/rubric/task-b-rubric.md#line.8
+  - text: Mentioning the budget without integrating it into the plan. That is the D-level descriptor.
+    source: inputs/rubric/task-b-rubric.md#line.8
+  - text: A plan that is infeasible for one person in 100 hours, such as a nationally representative sample or paid panel costs above budget.
+    source: inputs/rubric/task-b-rubric.md#line.8
+  - text: Describing what was done without justifying why. Staff flagged this in A1 feedback and said it carries over.
+    source: inputs/clarifications/task-b-additional-info.md#line.54
+  - text: Going over the 100-word limit (resolved per OQ1). Words past the limit are not marked.
+    source: inputs/spec/task-b-spec.md#line.32
+- id: C4
+  name: Statistical Analysis
+  original_wording: Statistical Analysis (2 marks)
+  original_source: inputs/rubric/task-b-rubric.md#line.9
+  weight: 2
+  applies_to:
+  - TB
+  cross_cutting: false
+  headings: '5'
+  learning_outcomes:
+  - ULO4
+  levels:
+  - level: HD
+    marks:
+    - 2
+    - 2
+    original: Appropriate tests are named, relevant to the hypothesis, and data assumptions are clearly identified. A plausible explanation is provided for why each test is appropriate for the variable types and research design, and how results would be interpreted. (2 marks)
+    observable:
+    - 'Test choice: the test(s) are named and suit the measurement level of the IV and DV and the design (e.g. two independent groups with a numeric outcome suggests an independent-samples or Welch''s t-test).'
+    - 'Relevance: each test directly tests H0 from heading 2.'
+    - 'Assumptions: the data assumptions are identified specifically (e.g. independence, distribution shape, equal or unequal variances, measurement level), and the answer says how they affect the test choice or what would be done if one fails.'
+    - 'Justification and interpretation: the answer explains why each test fits the variable types and design, and how a result would be read (e.g. the decision rule for rejecting H0 and what that means for the hypothesis).'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.9
+    - inputs/spec/task-b-spec.md#line.13
+    - inputs/clarifications/Assignment-2-faq.md#line.69
+    - inputs/clarifications/task-b-additional-info.md#line.10
+    - inputs/clarifications/task-b-additional-info.md#line.67
+    - inputs/clarifications/task-b-additional-info.md#line.108
+  - level: D
+    marks:
+    - 1.5
+    - 1.5
+    original: Appropriate tests are named and relevant to the hypothesis. Some data assumptions are identified, but the explanation of why the tests suit this topic is not fully developed. (1.5 marks)
+    observable:
+    - 'Test choice: appropriate tests are named.'
+    - 'Relevance: relevant to the hypothesis.'
+    - 'Assumptions: some assumptions are identified.'
+    - 'Justification and interpretation: the explanation of why the tests suit this topic or design is not fully developed, or interpretation is missing.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.9
+    - inputs/clarifications/Assignment-2-faq.md#line.69
+  - level: C
+    marks:
+    - 1.25
+    - 1.25
+    original: Appropriate tests are named and are relevant to the hypothesis. Data assumptions are not addressed and no explanation is provided for why the tests are appropriate. (1.25 marks)
+    observable:
+    - 'Test choice: appropriate tests are named.'
+    - 'Relevance: relevant to the hypothesis.'
+    - 'Assumptions: data assumptions are not addressed.'
+    - 'Justification and interpretation: no explanation of why the tests are appropriate.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.9
+  - level: P
+    marks:
+    - 1
+    - 1
+    original: Tests are named, but are not appropriate for the variable types or hypothesis. Data assumptions are not addressed and no reasoning is given for why the tests are suitable. (1 mark)
+    observable:
+    - 'Test choice: tests are named but do not suit the variable types or the hypothesis.'
+    - 'Relevance: weak or absent.'
+    - 'Assumptions: not addressed.'
+    - 'Justification and interpretation: no reasoning given.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.9
+  - level: N
+    marks:
+    - 0
+    - 0
+    original: No statistical tests proposed. (0 marks)
+    observable:
+    - No statistical test is proposed under heading 5.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.9
+  evidence:
+  - text: A named test whose requirements match the IV and DV types.
+    source: inputs/rubric/task-b-rubric.md#line.9
+  - text: Assumptions are stated, along with how they matter for choosing the test.
+    source: inputs/clarifications/Assignment-2-faq.md#line.69
+  - text: The justification is tied to the proposed hypothesis and variables.
+    source: inputs/clarifications/task-b-additional-info.md#line.70
+  - text: How results would be interpreted against H0.
+    source: inputs/rubric/task-b-rubric.md#line.9
+  pitfalls:
+  - text: Naming a test without saying why it suits the variable types and design. That caps the criterion at C (1.25).
+    source: inputs/rubric/task-b-rubric.md#line.9
+  - text: Listing assumptions generically, without saying how they would affect the choice of test.
+    source: inputs/clarifications/Assignment-2-faq.md#line.69
+  - text: Leaving out how results would be interpreted. It is part of the HD descriptor even though the spec task does not ask for it.
+    source: inputs/rubric/task-b-rubric.md#line.9
+  - text: Going over the 150-word limit. Words past the limit are not marked.
+    source: inputs/spec/task-b-spec.md#line.32
+- id: C5
+  name: Study Limitations and Alternative Narrative
+  original_wording: Study Limitations and Alternative Narrative (2 marks)
+  original_source: inputs/rubric/task-b-rubric.md#line.10
+  weight: 2
+  applies_to:
+  - TB
+  cross_cutting: false
+  headings: 6–7
+  learning_outcomes:
+  - ULO1
+  - ULO4
+  levels:
+  - level: HD
+    marks:
+    - 2
+    - 2
+    original: Multiple well-explained limitations related to the topic and hypothesis are identified, demonstrating critical reflection. Their impact on findings and conclusions is clearly articulated, and proposed future investigations directly address the limitations identified. A realistic and distinct alternative narrative is provided, supported by specific changes to data selection, methods, or processes, with clear justification for how these changes could produce a different interpretation of the findings. (2 marks)
+    observable:
+    - 'Limitations: two or more limitations specific to this design and topic (e.g. self-report exposure, sampling frame, cross-sectional design) are each explained, not just named.'
+    - 'Impact: each limitation''s effect on the findings or conclusions is stated (e.g. which way it would bias the result, or why it would limit generalisation).'
+    - 'Future investigations: each proposed investigation directly addresses a named limitation.'
+    - 'Alternative narrative: heading 7 gives a specific hypothetical result that leads to a different conclusion, names the concrete change (participant group, how a variable is measured, data selection or analysis method) that would produce it, and justifies how. It does not restate a null-test outcome or a limitation.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.10
+    - inputs/spec/task-b-spec.md#line.14
+    - inputs/spec/task-b-spec.md#line.15
+    - inputs/clarifications/Assignment-2-faq.md#line.75
+    - inputs/clarifications/Assignment-2-faq.md#line.77
+    - inputs/clarifications/Assignment-2-faq.md#line.79
+  - level: D
+    marks:
+    - 1.5
+    - 1.5
+    original: Multiple limitations related to the topic and hypothesis are identified, with some discussion of their impact on findings. A distinct alternative narrative is provided and supported by references to changes in data selection, methods, or processes. Connections between limitations, future investigations, and alternative interpretations are evident, but not fully developed. (1.5 marks)
+    observable:
+    - 'Limitations: several limitations related to the topic and hypothesis are identified.'
+    - 'Impact: there is some discussion of impact.'
+    - 'Future investigations: the connections between limitations, future work and alternative interpretations are evident but not fully developed.'
+    - 'Alternative narrative: distinct, and supported by references to changes in data selection, methods or processes.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.10
+  - level: C
+    marks:
+    - 1.25
+    - 1.25
+    original: Limitations relevant to the topic and hypothesis are identified, and an alternative narrative distinct from the original hypothesis is provided. However, the impact of the limitations on findings is unclear, future investigations are not clearly linked to the limitations, and references to alternative data selections, methods, or processes are limited or unclear. (1.25 marks)
+    observable:
+    - 'Limitations: relevant limitations are identified.'
+    - 'Impact: the impact on findings is unclear.'
+    - 'Future investigations: not clearly linked to the limitations.'
+    - 'Alternative narrative: distinct from the original hypothesis, but references to alternative data selection, methods or processes are limited or unclear.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.10
+  - level: P
+    marks:
+    - 1
+    - 1
+    original: Limitations are absent, generic, or not related to the topic and hypothesis. An alternative narrative is absent, merely restates the original hypothesis, or is not supported by the data. There is little or no consideration of the impact on findings, future investigations, or how different data selections, methods, or processes may lead to alternative interpretations. (1 mark)
+    observable:
+    - 'Limitations: absent, generic, or not related to the topic or hypothesis.'
+    - 'Impact: little or no consideration.'
+    - 'Future investigations: little or none.'
+    - 'Alternative narrative: absent, restates the original hypothesis, or is not supported by the data.'
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.10
+    - inputs/clarifications/Assignment-2-faq.md#line.77
+  - level: N
+    marks:
+    - 0
+    - 0
+    original: No limitations or alternative narrative are provided. (0 marks)
+    observable:
+    - Neither limitations (heading 6) nor an alternative narrative (heading 7) is provided.
+    sources:
+    - inputs/rubric/task-b-rubric.md#line.10
+  evidence:
+  - text: Heading 6 is a paragraph that explains the limitations and potential future investigations.
+    source: inputs/spec/task-b-spec.md#line.14
+  - text: Each future investigation corresponds to a stated limitation.
+    source: inputs/clarifications/Assignment-2-faq.md#line.79
+  - text: Heading 7 refers to specific results from the earlier Task B answers that would lead to a distinct conclusion.
+    source: inputs/clarifications/Assignment-2-faq.md#line.75
+  - text: Heading 7 explains how the data, methods or processes would need to be manipulated to produce those results.
+    source: inputs/clarifications/Assignment-2-faq.md#line.75
+  pitfalls:
+  - text: An alternative narrative that just states one possible outcome of the null-hypothesis test, or repeats a limitation.
+    source: inputs/clarifications/Assignment-2-faq.md#line.77
+  - text: Future investigations not tied to the limitations identified.
+    source: inputs/clarifications/Assignment-2-faq.md#line.79
+  - text: Generic limitations that would apply to any survey (e.g. 'small sample'), with no topic-specific impact.
+    source: inputs/rubric/task-b-rubric.md#line.10
+  - text: 'Running over the limits (heading 6: 100 words, heading 7: 50 words, per OQ2 and OQ3). Words past the limit are not marked.'
+    source: inputs/spec/task-b-spec.md#line.32
+conflicts:
+- description: 'Heading 4 word limit: the task list says ''max. 150 words'' but the prescribed heading says ''< 100 words''.'
+  sources:
+  - inputs/spec/task-b-spec.md#line.12
+  - inputs/spec/task-b-spec.md#line.25
+  resolution: 'Same authority (spec). Resolved by the student in OQ1: 100 words applies. This is the lower figure and satisfies both readings.'
+- description: 'Heading 6 word limit: the task list says ''max. 100 words'' but the heading says ''< 200 words''.'
+  sources:
+  - inputs/spec/task-b-spec.md#line.14
+  - inputs/spec/task-b-spec.md#line.27
+  resolution: 'Same authority (spec). Resolved by the student in OQ2: 100 words applies.'
+- description: 'Heading 7 word limit: the task list says ''max. 100words'' but the heading says ''< 50 words''.'
+  sources:
+  - inputs/spec/task-b-spec.md#line.15
+  - inputs/spec/task-b-spec.md#line.28
+  resolution: 'Same authority (spec). Resolved by the student in OQ3: 50 words applies.'
+- description: The forum summary says 'The forum has no Task B word limit. Use the corrected spec (see §1.3)', but §1.3 is not in inputs/.
+  sources:
+  - inputs/clarifications/task-b-additional-info.md#line.118
+  - inputs/spec/task-b-spec.md#line.32
+  resolution: 'Spec wins: strict per-heading limits apply, as resolved in OQ1–OQ3. Total 550 words.'
+- description: The spec says the hypothesis should be testable with 'the statistical tests covered in this unit'. Staff say any appropriate test may be used, not limited to examples discussed in class.
+  sources:
+  - inputs/spec/task-b-spec.md#line.9
+  - inputs/clarifications/Assignment-2-faq.md#line.69
+  - inputs/clarifications/task-b-additional-info.md#line.67
+  resolution: The staff clarification interprets rather than contradicts the spec, and the spec's intent holds. Prefer a test taught in Week 9 or a close variant such as Welch's t-test, and justify it against the hypothesis and variables.
+- description: The rubric's Statistical Analysis HD descriptor requires saying 'how results would be interpreted'. Spec task 5 asks only for the tests, assumptions and why they are appropriate.
+  sources:
+  - inputs/rubric/task-b-rubric.md#line.9
+  - inputs/spec/task-b-spec.md#line.13
+  resolution: 'Official rubric wins: include a brief interpretation (decision against H0) under heading 5, within the 150 words.'
+- description: Rubric level marks are discrete per criterion (N 0, P 1, C 1.25, D 1.5, HD 2), so the task-level percentages are 0/50/62.5/75/100. The template grade bands put C at 65% or more and HD at 85% or more.
+  sources:
+  - inputs/rubric/task-b-rubric.md#line.5
+  resolution: 'Official rubric wins: graders award the rubric''s fixed level marks. Template grade_bands are used only to label the final total.'
