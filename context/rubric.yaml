@@ -16,6 +16,7 @@ sources_sha256:
   inputs/spec/task-b-spec.md: 8594ecdd5ef039255faf49dedeb0b011add0f836cce8fe2da943428f3b3c261e
   inputs/clarifications/Assignment-2-faq.md: 2316180501d29a8137da12feea7a5a1911420f842514e4492ecf932ee1e75b4a
   inputs/clarifications/task-b-additional-info.md: cca33b188a2daaaeb83b9f2910f4817dbbab05593fbc8707fc49deeeb4e3a93e
+  inputs/lectures/week-9-summary.md: cad7adf90075b506e13064ff70f74af54ad96a5115d1a7a97d3e0594d4fbc35c
 criteria:
 - id: C1
   name: Hypothesis and null hypothesis
@@ -51,6 +52,8 @@ criteria:
     - inputs/clarifications/task-b-additional-info.md#line.91
     - inputs/clarifications/task-b-additional-info.md#line.94
     - inputs/clarifications/task-b-additional-info.md#line.103
+    - inputs/lectures/week-9-summary.md#line.134
+    - inputs/lectures/week-9-summary.md#line.141
   - level: D
     marks:
     - 1.5
@@ -116,6 +119,8 @@ criteria:
     source: inputs/spec/task-b-spec.md#line.5
   - text: Heading 1 is within 50 words and heading 2 is within 50 words.
     source: inputs/spec/task-b-spec.md#line.9
+  - text: The hypothesis is testable and falsifiable with observable or measurable evidence. It names nothing that cannot be measured.
+    source: inputs/lectures/week-9-summary.md#line.134
   pitfalls:
   - text: Writing 'significantly higher' or 'statistically significant' in the hypothesis. Significance is a conclusion from the test, not a prediction.
     source: inputs/clarifications/task-b-additional-info.md#line.91
@@ -127,6 +132,8 @@ criteria:
     source: inputs/rubric/task-b-rubric.md#line.6
   - text: Going over 50 words. Words past the limit are not marked.
     source: inputs/spec/task-b-spec.md#line.32
+  - text: An outcome that cannot be observed or measured (e.g. vague 'feelings about housing'), which makes the hypothesis untestable.
+    source: inputs/lectures/week-9-summary.md#line.134
 - id: C2
   name: Variables
   original_wording: Variables (2 marks)
@@ -147,13 +154,15 @@ criteria:
     observable:
     - The IV and DV are named with the same wording as in heading 1, and their roles are correct (the IV is the social-media exposure or condition; the DV is the housing-perception outcome).
     - At least three confounding variables are listed.
-    - Each confounder is a factor that could plausibly also affect the outcome for young non-homeowning Australians (e.g. income, location or local housing market, current living arrangement). None is generic.
+    - Each confounder could plausibly be associated with both the social-media IV and the housing-perception DV for young non-homeowning Australians (e.g. income, location or local housing market, current living arrangement). None is generic.
     - Where words allow, the answer says how the confounders will be controlled, measured or scoped.
     sources:
     - inputs/rubric/task-b-rubric.md#line.7
     - inputs/spec/task-b-spec.md#line.11
     - inputs/clarifications/task-b-additional-info.md#line.95
     - inputs/clarifications/task-b-additional-info.md#line.35
+    - inputs/lectures/week-9-summary.md#line.175
+    - inputs/lectures/week-9-summary.md#line.176
   - level: D
     marks:
     - 1.5
@@ -209,6 +218,8 @@ criteria:
     source: inputs/rubric/task-b-rubric.md#line.7
   - text: Confounders are recognised and, where possible, the answer says how they will be controlled, measured or scoped.
     source: inputs/clarifications/task-b-additional-info.md#line.35
+  - text: Each confounder relates to both the IV and the DV, matching the Week 9 definition (it 'correlates with both the IV and DV').
+    source: inputs/lectures/week-9-summary.md#line.175
   pitfalls:
   - text: Confounders that are generic or not linked to the topic. The rubric's D level is defined by unclear topic relevance.
     source: inputs/rubric/task-b-rubric.md#line.7
@@ -218,6 +229,8 @@ criteria:
     source: inputs/rubric/task-b-rubric.md#line.7
   - text: Explaining each confounder in prose and running past the 50-word limit.
     source: inputs/spec/task-b-spec.md#line.32
+  - text: Listing variables that affect only the outcome, or that are caused by the IV (mediators). Neither fits the Week 9 definition of a confounder.
+    source: inputs/lectures/week-9-summary.md#line.175
 - id: C3
   name: Data Collection
   original_wording: Data Collection (2 marks)
@@ -238,13 +251,15 @@ criteria:
     original: A feasible and clearly described data collection plan that is closely related to the hypothesis. Sampling strategy, recruitment approach, location, equipment, and processes are all outlined within a realistic $\$1000$ budget and the $100\text{ hour}$ time allocation. (2 marks)
     observable:
     - 'Feasibility: the plan could be run by one person within the stated resources.'
-    - 'Practical detail: the sampling strategy (target sample and inclusion of 18–30-year-old non-homeowners), the recruitment approach, the location (online or physical), the equipment or instruments (e.g. survey platform, named scales) and the process steps are all stated.'
+    - 'Practical detail: the sampling strategy (named method such as convenience, purposive, stratified or snowball, why it suits the resources, target sample, and inclusion of 18–30-year-old non-homeowners), the recruitment approach, the location (online or physical), the equipment or instruments (e.g. survey platform, named scales) and the process steps are all stated.'
     - 'Link to hypothesis: the data collected measure the IV, the DV and the confounders from heading 3.'
     - 'Budget and time: costs are itemised and total no more than AUD 1,000, and hours are allocated to stages and total no more than 100. Both are integrated into the plan, not just mentioned.'
     sources:
     - inputs/rubric/task-b-rubric.md#line.8
     - inputs/spec/task-b-spec.md#line.12
     - inputs/spec/task-b-spec.md#line.5
+    - inputs/lectures/week-9-summary.md#line.113
+    - inputs/lectures/week-9-summary.md#line.119
   - level: D
     marks:
     - 1.5
@@ -301,6 +316,8 @@ criteria:
     source: inputs/rubric/task-b-rubric.md#line.8
   - text: Practical detail on how the data would be obtained, not just what data.
     source: inputs/spec/task-b-spec.md#line.12
+  - text: The sampling strategy is reported as which method, why it was chosen, and how it may limit generalisability. The third part can sit under heading 6.
+    source: inputs/lectures/week-9-summary.md#line.119
   pitfalls:
   - text: Leaving out the AUD 1,000 budget or the 100 hours. The rubric's C level is defined by 'No reference to the $1000 budget and the time allocation', so this caps the criterion at 1.25/2 even for a detailed plan.
     source: inputs/rubric/task-b-rubric.md#line.8
@@ -312,6 +329,8 @@ criteria:
     source: inputs/clarifications/task-b-additional-info.md#line.54
   - text: Going over the 100-word limit (resolved per OQ1). Words past the limit are not marked.
     source: inputs/spec/task-b-spec.md#line.32
+  - text: Using convenience or voluntary-response sampling without acknowledging limited generalisability or self-selection bias.
+    source: inputs/lectures/week-9-summary.md#line.104
 - id: C4
   name: Statistical Analysis
   original_wording: Statistical Analysis (2 marks)
@@ -330,9 +349,9 @@ criteria:
     - 2
     original: Appropriate tests are named, relevant to the hypothesis, and data assumptions are clearly identified. A plausible explanation is provided for why each test is appropriate for the variable types and research design, and how results would be interpreted. (2 marks)
     observable:
-    - 'Test choice: the test(s) are named and suit the measurement level of the IV and DV and the design (e.g. two independent groups with a numeric outcome suggests an independent-samples or Welch''s t-test).'
+    - 'Test choice: the test(s) are named and the choice follows from the number of groups, a between- or within-subjects design, and whether parametric assumptions hold (e.g. two independent groups with a numeric outcome suggests a Student''s or Welch''s t-test, with Mann–Whitney U as the non-parametric fallback).'
     - 'Relevance: each test directly tests H0 from heading 2.'
-    - 'Assumptions: the data assumptions are identified specifically (e.g. independence, distribution shape, equal or unequal variances, measurement level), and the answer says how they affect the test choice or what would be done if one fails.'
+    - 'Assumptions: the data assumptions are identified specifically (e.g. independence, normality, measurement level, equal or unequal variances, which decide Student''s versus Welch''s), and the answer says how they affect the test choice or what would be done if one fails.'
     - 'Justification and interpretation: the answer explains why each test fits the variable types and design, and how a result would be read (e.g. the decision rule for rejecting H0 and what that means for the hypothesis).'
     sources:
     - inputs/rubric/task-b-rubric.md#line.9
@@ -341,6 +360,10 @@ criteria:
     - inputs/clarifications/task-b-additional-info.md#line.10
     - inputs/clarifications/task-b-additional-info.md#line.67
     - inputs/clarifications/task-b-additional-info.md#line.108
+    - inputs/lectures/week-9-summary.md#line.191
+    - inputs/lectures/week-9-summary.md#line.195
+    - inputs/lectures/week-9-summary.md#line.196
+    - inputs/lectures/week-9-summary.md#line.197
   - level: D
     marks:
     - 1.5
@@ -396,6 +419,10 @@ criteria:
     source: inputs/clarifications/task-b-additional-info.md#line.70
   - text: How results would be interpreted against H0.
     source: inputs/rubric/task-b-rubric.md#line.9
+  - text: 'The test is one taught in Week 9 or a justified variant: Student''s or Welch''s t-test, paired t-test, one-way ANOVA with Tukey post-hoc, ANCOVA, Mann–Whitney U, or Wilcoxon signed-rank.'
+    source: inputs/lectures/week-9-summary.md#line.195
+  - text: The choice is argued from the number of groups, the design (between- or within-subjects) and whether parametric assumptions hold.
+    source: inputs/lectures/week-9-summary.md#line.191
   pitfalls:
   - text: Naming a test without saying why it suits the variable types and design. That caps the criterion at C (1.25).
     source: inputs/rubric/task-b-rubric.md#line.9
@@ -405,6 +432,12 @@ criteria:
     source: inputs/rubric/task-b-rubric.md#line.9
   - text: Going over the 150-word limit. Words past the limit are not marked.
     source: inputs/spec/task-b-spec.md#line.32
+  - text: Choosing Welch's over Student's t-test on the basis of skew. Variance equality is what decides it.
+    source: inputs/lectures/week-9-summary.md#line.195
+  - text: Proposing a one-way ANOVA for 3+ groups without a post-hoc test such as Tukey to show which groups differ.
+    source: inputs/lectures/week-9-summary.md#line.197
+  - text: Applying a between-subjects test to within-subjects data, or vice versa.
+    source: inputs/lectures/week-9-summary.md#line.196
 - id: C5
   name: Study Limitations and Alternative Narrative
   original_wording: Study Limitations and Alternative Narrative (2 marks)
@@ -424,10 +457,10 @@ criteria:
     - 2
     original: Multiple well-explained limitations related to the topic and hypothesis are identified, demonstrating critical reflection. Their impact on findings and conclusions is clearly articulated, and proposed future investigations directly address the limitations identified. A realistic and distinct alternative narrative is provided, supported by specific changes to data selection, methods, or processes, with clear justification for how these changes could produce a different interpretation of the findings. (2 marks)
     observable:
-    - 'Limitations: two or more limitations specific to this design and topic (e.g. self-report exposure, sampling frame, cross-sectional design) are each explained, not just named.'
+    - 'Limitations: two or more limitations specific to this design and topic (e.g. self-report exposure, sampling frame and representativeness, cross-sectional design) are each explained, not just named.'
     - 'Impact: each limitation''s effect on the findings or conclusions is stated (e.g. which way it would bias the result, or why it would limit generalisation).'
     - 'Future investigations: each proposed investigation directly addresses a named limitation.'
-    - 'Alternative narrative: heading 7 gives a specific hypothetical result that leads to a different conclusion, names the concrete change (participant group, how a variable is measured, data selection or analysis method) that would produce it, and justifies how. It does not restate a null-test outcome or a limitation.'
+    - 'Alternative narrative: heading 7 gives a specific hypothetical result that leads to a different conclusion, names the concrete change (participant group, how a variable is measured, data selection or analysis method, e.g. selection bias, cherry-picking, p-hacking or HARKing applied to this study) that would produce it, and justifies how. It does not restate a null-test outcome or a limitation.'
     sources:
     - inputs/rubric/task-b-rubric.md#line.10
     - inputs/spec/task-b-spec.md#line.14
@@ -435,6 +468,12 @@ criteria:
     - inputs/clarifications/Assignment-2-faq.md#line.75
     - inputs/clarifications/Assignment-2-faq.md#line.77
     - inputs/clarifications/Assignment-2-faq.md#line.79
+    - inputs/lectures/week-9-summary.md#line.81
+    - inputs/lectures/week-9-summary.md#line.122
+    - inputs/lectures/week-9-summary.md#line.205
+    - inputs/lectures/week-9-summary.md#line.206
+    - inputs/lectures/week-9-summary.md#line.207
+    - inputs/lectures/week-9-summary.md#line.208
   - level: D
     marks:
     - 1.5
@@ -490,6 +529,10 @@ criteria:
     source: inputs/clarifications/Assignment-2-faq.md#line.75
   - text: Heading 7 explains how the data, methods or processes would need to be manipulated to produce those results.
     source: inputs/clarifications/Assignment-2-faq.md#line.75
+  - text: Heading 7's manipulation is tied to a specific element of the earlier design and can be named in Week 9 terms (selection bias, cherry-picking or reporting bias, p-hacking, HARKing).
+    source: inputs/lectures/week-9-summary.md#line.205
+  - text: Heading 6 says how the sampling choice limits generalisability to the population.
+    source: inputs/lectures/week-9-summary.md#line.122
   pitfalls:
   - text: An alternative narrative that just states one possible outcome of the null-hypothesis test, or repeats a limitation.
     source: inputs/clarifications/Assignment-2-faq.md#line.77
@@ -499,6 +542,8 @@ criteria:
     source: inputs/rubric/task-b-rubric.md#line.10
   - text: 'Running over the limits (heading 6: 100 words, heading 7: 50 words, per OQ2 and OQ3). Words past the limit are not marked.'
     source: inputs/spec/task-b-spec.md#line.32
+  - text: Naming bias types (e.g. 'p-hacking could occur') without the specific hypothetical result and the specific change that would produce it.
+    source: inputs/lectures/week-9-summary.md#line.207
 conflicts:
 - description: 'Heading 4 word limit: the task list says ''max. 150 words'' but the prescribed heading says ''< 100 words''.'
   sources:
@@ -525,7 +570,7 @@ conflicts:
   - inputs/spec/task-b-spec.md#line.9
   - inputs/clarifications/Assignment-2-faq.md#line.69
   - inputs/clarifications/task-b-additional-info.md#line.67
-  resolution: The staff clarification interprets rather than contradicts the spec, and the spec's intent holds. Prefer a test taught in Week 9 or a close variant such as Welch's t-test, and justify it against the hypothesis and variables.
+  resolution: The staff clarification interprets rather than contradicts the spec, and the spec's intent holds. Week 9 covered Student's and Welch's t-tests, paired t-test, one-way ANOVA with Tukey, ANCOVA, Mann–Whitney U and Wilcoxon signed-rank (inputs/lectures/week-9-summary.md#line.195). Prefer one of these and justify it against the hypothesis and variables.
 - description: The rubric's Statistical Analysis HD descriptor requires saying 'how results would be interpreted'. Spec task 5 asks only for the tests, assumptions and why they are appropriate.
   sources:
   - inputs/rubric/task-b-rubric.md#line.9
@@ -535,3 +580,8 @@ conflicts:
   sources:
   - inputs/rubric/task-b-rubric.md#line.5
   resolution: 'Official rubric wins: graders award the rubric''s fixed level marks. Template grade_bands are used only to label the final total.'
+- description: The Week 9 summary's §3.6 (variables, designs, test selection) was reconstructed from study flashcards and studio notes, because the lecture file was cut off. It is not original lecture text.
+  sources:
+  - inputs/lectures/week-9-summary.md#line.170
+  - inputs/lectures/week-9-summary.md#line.246
+  resolution: Used only as authority-4 detail. It never overrides the rubric, spec or clarifications, and it agrees with them on t-tests, Welch's test and confounders (inputs/clarifications/task-b-additional-info.md#line.10).

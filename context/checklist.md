@@ -3,7 +3,7 @@
 > Every explicit "must" and "should" from the spec and staff clarifications.
 > Machine version: `context/checklist.yaml`. Tick items only with evidence.
 
-Generated 2026-10-25. 40 must, 9 should.
+Generated 2026-10-25. 46 must, 12 should.
 Per-heading word limits are `manual` checks, because `tools/wordcount.py` counts only the TB total (550).
 
 | ID | Strength | Requirement | Verbatim | Applies to | Source | Check |
@@ -57,3 +57,12 @@ Per-heading word limits are `manual` checks, because `tools/wordcount.py` counts
 | R47 | must | In-text citations are counted toward each heading's word limit. | \| Do in-text citations count toward each section's word limit? \| **Yes.** \| | TB | inputs/clarifications/task-b-additional-info.md#line.46 | wordcount |
 | R48 | should | Decisions are justified (why), not only described (what). | observed a lot of students focusing on describing what they had done without adequately explaining why | TB | inputs/clarifications/task-b-additional-info.md#line.54 | manual |
 | R49 | should | Reasoning is specific to this topic and design, not generic. | Task A reasoning was marked down when "too generic or unconvincing" | TB | inputs/clarifications/task-b-additional-info.md#line.55 | manual |
+| R50 | must | The hypothesis is testable and falsifiable using observable or measurable evidence. | A useful scientific hypothesis **must be testable** (and falsifiable) using **observable or measurable empirical evidence**. | TB | inputs/lectures/week-9-summary.md#line.134 | manual |
+| R51 | must | The answer states which sampling strategy is used. | **Which** sampling strategy was used. | TB | inputs/lectures/week-9-summary.md#line.120 | manual |
+| R52 | must | The answer states why that sampling strategy was chosen, given the context and constraints. | **Why** it was selected given the research context and constraints. | TB | inputs/lectures/week-9-summary.md#line.121 | manual |
+| R53 | must | The answer states how the sampling choice may affect or limit generalisability. | **How** the sampling choice may affect or limit the generalisability of the findings. | TB | inputs/lectures/week-9-summary.md#line.122 | manual |
+| R54 | must | If convenience sampling is used, its limited generalisability is explicitly acknowledged. | Researchers *must* explicitly acknowledge these limitations. | TB | inputs/lectures/week-9-summary.md#line.104 | manual |
+| R55 | must | The test is chosen by number of groups, between- or within-subjects design, and whether parametric assumptions hold, not arbitrarily. | test selection depends on (1) **number of groups/conditions**, (2) **between- vs. within-subjects design**, and (3) **whether parametric assumptions (such as normality and level of measurement) hold** | TB | inputs/lectures/week-9-summary.md#line.191 | manual |
+| R56 | should | If a within-subjects design is used, the order of conditions is counterbalanced. | **Counter-balancing** the order of conditions is essential in within-subjects studies to prevent **order effects** | TB | inputs/lectures/week-9-summary.md#line.184 | manual |
+| R57 | should | If a within-subjects design is used, every participant has a valid measurement for each condition. | Every participant must have a valid measurement for each condition/measure. | TB | inputs/lectures/week-9-summary.md#line.183 | manual |
+| R58 | should | The design and reporting plan guard against selection bias, cherry-picking, p-hacking, HARKing and misleading visualisations. | researchers must guard against **selection bias, cherry-picking, $p$-hacking, HARKing, and misleading visualisations** | TB | inputs/lectures/week-9-summary.md#line.233 | manual |

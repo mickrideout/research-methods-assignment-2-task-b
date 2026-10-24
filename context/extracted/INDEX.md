@@ -1,6 +1,6 @@
 # Extracted inputs index
 
-Generated 2026-10-25T10:39:43+11:00 by tools/extract_inputs.py. Cite as `inputs/<path>#p.N` (or `#slide.N`, `#para.N`, `#table.N`, `#cell.N`, `#line.N`).
+Generated 2026-10-25T10:52:12+11:00 by tools/extract_inputs.py. Cite as `inputs/<path>#p.N` (or `#slide.N`, `#para.N`, `#table.N`, `#cell.N`, `#line.N`).
 
 | Input | Status | Method | Units | sha256 (12) | Extracted text |
 |---|---|---|---|---|---|
@@ -47,5 +47,6 @@ Generated 2026-10-25T10:39:43+11:00 by tools/extract_inputs.py. Cite as `inputs/
 | inputs/data/proposal-7.md | indexed | - | - | 1ef2a9fd6a7a | (read directly) |
 | inputs/data/proposal-8.md | indexed | - | - | 96a31c56c0a2 | (read directly) |
 | inputs/data/proposal-9.md | indexed | - | - | d41cd3e4af46 | (read directly) |
+| inputs/lectures/week-9-summary.md | ok | text | 6 | cad7adf90075 | context/extracted/lectures/week-9-summary.md.md |
 | inputs/rubric/task-b-rubric.md | ok | text | 1 | 6510bffa98dc | context/extracted/rubric/task-b-rubric.md.md |
 | inputs/spec/task-b-spec.md | ok | text | 1 | 8594ecdd5ef0 | context/extracted/spec/task-b-spec.md.md |

@@ -386,6 +386,15 @@
     "status": "indexed",
     "units": null
   },
+  "lectures/week-9-summary.md": {
+    "extracted": "context/extracted/lectures/week-9-summary.md.md",
+    "method": "text",
+    "mtime": 1792499668.3013816,
+    "sha256": "cad7adf90075b506e13064ff70f74af54ad96a5115d1a7a97d3e0594d4fbc35c",
+    "size": 26493,
+    "status": "ok",
+    "units": 6
+  },
   "rubric/task-b-rubric.md": {
     "extracted": "context/extracted/rubric/task-b-rubric.md.md",
     "method": "text",
