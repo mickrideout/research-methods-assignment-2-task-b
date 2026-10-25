@@ -1,6 +1,6 @@
 ---
 title: "FIT5125 : Task B: Working with Hypotheses"
-author: " ()"
+author: "Michael Rideout (36809268)"
 lang: en-AU
 ---
 
@@ -52,8 +52,3 @@ A brief, researcher-made feed lacks the personalisation and repeated exposure of
 
 "Housing pessimism reflects finances, not feeds" could be manufactured by recruiting only low-income capital-city renters, whose near-floor ratings leave framing no room; measuring likelihood a week later, so effects fade; and excluding pessimistic-condition participants who passed the manipulation check. Equal near-floor group means would then 'show' framing is irrelevant.
 <!-- END TB -->
-
-# References {.unnumbered}
-
-::: {#refs}
-:::

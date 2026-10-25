@@ -18,3 +18,6 @@ acknowledgement. export-submission builds the AI acknowledgement from this log.
 | 2026-10-25T11:20+11:00 | answer-question | TB | - | Revised answer (revise mode, from reports/grading/TB/20261025-111336.md) | answers/answers.md, work/questions/TB/sources.md |  |
 | 2026-10-25T11:29+11:00 | grade-question | TB | - | Graded against rubric | reports/grading/TB/20261025-112832.md |  |
 | 2026-10-25T11:32+11:00 | answer-question | TB | - | Revised answer (revise mode from reports/grading/TB/20261025-112832.md) | answers/answers.md, work/questions/TB/sources.md |  |
+| 2026-10-25T11:42+11:00 | grade-question | TB | - | Graded against rubric | reports/grading/TB/20261025-114021.md |  |
+| 2026-10-25T11:45+11:00 | check-compliance | - | - | Ran compliance checks | reports/compliance/20261025-114505.md |  |
+| 2026-10-25T11:49+11:00 | export-submission | - | - | Built export and pre-submission check | export/36809268-Assignment-2-Task-B.pdf, reports/presubmission/20261025-114926.md |  |

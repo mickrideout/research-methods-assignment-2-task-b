@@ -101,6 +101,8 @@ def main():
             print(f"note: {rel(csl, root)} not found; pandoc's default style (Chicago author-date) will be used. "
                   "Download the required CSL from https://www.zotero.org/styles")
         ref_docx = fmt.get("reference_docx")
+        if ref_docx == "n/a":
+            ref_docx = None
         produced = []
         for f in formats:
             target = out_dir / f"{name}.{f}"
@@ -111,7 +113,12 @@ def main():
                     answers.parent, a.dry_run)
             elif f == "pdf":
                 hdr = build / "keep-figures-in-place.tex"
-                hdr.write_text("\\usepackage{float}\n\\floatplacement{figure}{H}\n", encoding="utf-8")
+                # Latin Modern has no Greek glyphs, so typeset Unicode Greek (α = .05) in math mode.
+                greek = {"α": "alpha", "β": "beta", "χ": "chi", "δ": "delta", "ε": "epsilon", "η": "eta",
+                         "μ": "mu", "ρ": "rho", "σ": "sigma", "τ": "tau", "Δ": "Delta", "Σ": "Sigma"}
+                hdr.write_text("\\usepackage{float}\n\\floatplacement{figure}{H}\n\\usepackage{newunicodechar}\n"
+                               + "".join(f"\\newunicodechar{{{c}}}{{\\ensuremath{{\\{n}}}}}\n" for c, n in greek.items()),
+                               encoding="utf-8")
                 run(base + ["-o", str(target), "--pdf-engine=xelatex", "-V", "geometry:margin=2.5cm",
                             "-H", str(hdr)], answers.parent, a.dry_run)
             elif f == "docx":
