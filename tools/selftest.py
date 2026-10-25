@@ -226,8 +226,8 @@ def main():
               and "BEGIN Q1" not in txt and "@nguyen" not in txt)
         if shutil.which("xelatex"):
             r = run(proj, py, "tools/export.py", "--to", "pdf")
-            check("export pdf", r.ok and (proj / "export/DSCI9001_A2_12345678.pdf").read_bytes()[:4] == b"%PDF",
-                  r.stdout[-300:] + r.stderr[-300:])
+            check("export pdf via LaTeX", r.ok and (proj / "export/DSCI9001_A2_12345678.pdf").read_bytes()[:4] == b"%PDF"
+                  and (proj / "export/build/DSCI9001_A2_12345678.tex").exists(), r.stdout[-300:] + r.stderr[-300:])
 
         # --- skills
         r = run(proj, py, "tools/validate_skills.py")

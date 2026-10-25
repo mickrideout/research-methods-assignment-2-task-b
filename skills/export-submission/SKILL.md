@@ -1,6 +1,6 @@
 ---
 name: export-submission
-description: Assembles the final submission from answers/answers.md with pandoc into the required format (docx, pdf and so on), with citations rendered in the required style, the required filename and an optional code zip. It writes the generative-AI acknowledgement section from the AI-use log and the unit's policy, then runs a pre-submission checklist that ends in a GO/NO-GO decision. Use when the user asks to export, build, assemble, finalise or check readiness to submit the assignment.
+description: Assembles the final submission from answers/answers.md with pandoc into the required format (docx, pdf, tex and so on), building PDF by exporting to LaTeX and compiling that with xelatex, with citations rendered in the required style, the required filename and an optional code zip. It writes the generative-AI acknowledgement section from the AI-use log, then runs a pre-submission checklist that ends in a GO/NO-GO decision. Use when the user asks to export, build, assemble, finalise or check readiness to submit the assignment.
 ---
 
 # export-submission
@@ -35,9 +35,13 @@ Path placeholders such as `<export_dir>` mean `paths.export_dir` in the details 
    - **Show the user the text and ask them to confirm it is accurate before continuing.** Only the user knows their full AI use.
    - If the log's "Your review" column is empty, warn that most units expect it to be filled in.
 2. **Compliance:** run `python3 <tools>/compliance.py --out "$(python3 <tools>/report_path.py compliance)"`. If it reports any FAIL, stop with NO-GO, unless the user explicitly accepts a listed FAIL.
-3. **Build:** run `python3 <tools>/export.py`. Use `--dry-run` first if the formats or filename look wrong. If the CSL file is missing and `referencing.style` is set, stop and ask the user to download the CSL (see the export.py note). Use the default style only if the user agrees.
+3. **Build:** run `python3 <tools>/export.py`. Use `--dry-run` first if the formats or filename look wrong.
+   - PDF is built in two steps: pandoc exports the answers to LaTeX, `<export_dir>/build/<filename>.tex` (figures copied to `build/media/`), then xelatex compiles that `.tex` to the PDF.
+   - If xelatex fails, read the end of `<export_dir>/build/<filename>.log`, report the LaTeX error and the answer text that caused it (often an unescaped character or a missing figure), and stop. Do not edit the answers to fix it; that belongs to answer-question.
+   - Add `tex` to the formats (`--to pdf,tex`) only if the spec asks for the LaTeX source; it copies the `.tex` and `media/` to `<export_dir>`. If the CSL file is missing and `referencing.style` is set, stop and ask the user to download the CSL (see the export.py note). Use the default style only if the user agrees.
 4. **Inspect the output:**
    - Convert the main export to text, e.g. `pandoc <export_dir>/<name>.docx -t plain`, or `pdftotext <export_dir>/<name>.pdf -`.
+   - For PDF, also check the xelatex log for warnings: `grep -E 'Warning|Overfull|Missing character' <export_dir>/build/<name>.log`. Missing characters mean the font lacks a glyph.
    - Check that the reference list rendered, and that there are no `???`, unresolved `@key` citations, or leftover `<!--` markers.
    - Check that each figure appears.
    - Check that the headings match the required sections.
@@ -52,7 +56,7 @@ Path placeholders such as `<export_dir>` mean `paths.export_dir` in the details 
 
 ## Output
 
-- `<export_dir>/<filename>.<ext>` for each format in `format.file_type`, `<export_dir>/<filename>_code.zip` (if required), `<export_dir>/MANIFEST.md`, and `<export_dir>/build/` (intermediate files).
+- `<export_dir>/<filename>.<ext>` for each format in `format.file_type`, `<export_dir>/<filename>_code.zip` (if required), `<export_dir>/MANIFEST.md`, and `<export_dir>/build/` (intermediate files, including the LaTeX source `<filename>.tex`, its `media/` and the xelatex log).
 - `<answers>`: the AI-ACK section only (if required).
 - `<reports_dir>/presubmission/<YYYYMMDD-HHMMSS>.md` with `decision: GO|NO-GO`.
 - Final message:
@@ -64,13 +68,13 @@ Path placeholders such as `<export_dir>` mean `paths.export_dir` in the details 
 ## Quality checks
 
 - `export.py` exited 0 and every output passed its validity check (docx zip or `%PDF` header).
+- For PDF, the PDF was compiled from this run's `build/<filename>.tex`, and the xelatex log has no missing-character or missing-file warnings.
 - The compliance report is from this run and shows PASS (or the user waived the listed FAILs).
 - No question section changed. Check this with `fingerprint.py` before and after; only the AI-ACK hash may differ.
 - The AI acknowledgement was confirmed by the user.
 
 ## If inputs are missing
 
-- Policy `prohibited`: produce NO-GO and explain that AI-assisted content conflicts with the unit policy.
 - `format.file_type` null: ask the user. Do not guess the format.
 - `student.id` or `student.name` missing for the filename pattern: ask.
-- pandoc or LaTeX missing: report it. For PDF, offer to export DOCX and convert it with LibreOffice.
+- pandoc or xelatex missing: report it and ask before installing anything (for example TeX Live). Do not fall back to another PDF route without the user's agreement.

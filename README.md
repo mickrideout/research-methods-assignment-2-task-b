@@ -14,7 +14,7 @@ Agent-facing instructions are in [AGENTS.md](AGENTS.md).
 
 - Python 3.10+ with PyYAML (`python3 -m pip install -r tools/requirements.txt`)
 - pandoc (export), poppler-utils `pdftotext` (PDF extraction)
-- For PDF output: xelatex (TeX Live), or LibreOffice when you use a styled reference .docx
+- For PDF output: xelatex (TeX Live). PDF is compiled from a LaTeX file that pandoc writes first
 - Any agent that can read files and run shell commands. Skills are in the open Agent Skills
   format under `skills/`.
 
@@ -110,12 +110,6 @@ python3 tools/compliance.py              # quick compliance check
 | `examples/demo-unit/` | a fictional assignment taken through every stage |
 
 Verify the template still works with `python3 tools/selftest.py` and `python3 tools/validate_skills.py`.
-
-## Academic integrity
-
-Check the unit's generative-AI policy before you use any drafting skill. `define-details` records it,
-`answer-question` refuses to draft if it's prohibited, and `export-submission` builds the acknowledgement
-from the AI-use log. You remain responsible for every word you submit.
 
 ## Skills reference
 

@@ -9,11 +9,14 @@ paths.code_dir when `submission.code_bundle` is true. Writes export/MANIFEST.md.
 Usage:
   python3 tools/export.py                 # build every required format
   python3 tools/export.py --to docx,pdf   # override formats
-  python3 tools/export.py --dry-run       # show pandoc commands only
+  python3 tools/export.py --dry-run       # show pandoc and xelatex commands only
 Filename comes from `submission.filename_pattern`, with placeholders
 {unit_code} {assignment_number} {assignment_title} {student_id} {student_name}.
-PDF goes via LaTeX (xelatex), or via DOCX + LibreOffice when
-`format.reference_docx` is set, so the docx styling carries over.
+PDF is built in two steps: pandoc writes a standalone LaTeX file,
+build/<name>.tex (figures copied to build/media/), then xelatex compiles that
+file to the PDF. The build folder compiles on its own, so the .tex can be
+edited and rebuilt by hand. Format `tex` also copies the .tex (and media/)
+to the export dir.
 """
 from __future__ import annotations
 
@@ -55,6 +58,19 @@ def run(cmd, cwd, dry):
             print((r.stdout + r.stderr).strip())
         if r.returncode:
             raise ToolError(f"{cmd[0]} failed with exit {r.returncode}")
+
+
+def xelatex(tex: Path, dry):
+    """Compile tex in its own folder; two passes so cross-references settle."""
+    cmd = ["xelatex", "-interaction=nonstopmode", "-halt-on-error", tex.name]
+    for _ in range(2):
+        print("$ " + " ".join(cmd))
+        if dry:
+            return
+        r = subprocess.run(cmd, cwd=tex.parent, capture_output=True, text=True)
+        if r.returncode:
+            print("\n".join(r.stdout.splitlines()[-25:]))
+            raise ToolError(f"xelatex failed with exit {r.returncode}; see {tex.with_suffix('.log')}")
 
 
 def verify(path: Path, fmt: str):
@@ -103,24 +119,36 @@ def main():
         ref_docx = fmt.get("reference_docx")
         if ref_docx == "n/a":
             ref_docx = None
+        formats = ["tex" if f == "latex" else f for f in formats]
+        if "pdf" in formats and not shutil.which("xelatex") and not a.dry_run:
+            raise ToolError("xelatex is not installed (needed to compile the LaTeX export to PDF)")
+        tex = build / f"{name}.tex"
+        if {"pdf", "tex"} & set(formats):
+            hdr = build / "keep-figures-in-place.tex"
+            # Latin Modern has no Greek glyphs, so typeset Unicode Greek (α = .05) in math mode.
+            greek = {"α": "alpha", "β": "beta", "χ": "chi", "δ": "delta", "ε": "epsilon", "η": "eta",
+                     "μ": "mu", "ρ": "rho", "σ": "sigma", "τ": "tau", "Δ": "Delta", "Σ": "Sigma"}
+            hdr.write_text("\\usepackage{float}\n\\floatplacement{figure}{H}\n\\usepackage{newunicodechar}\n"
+                           + "".join(f"\\newunicodechar{{{c}}}{{\\ensuremath{{\\{n}}}}}\n" for c, n in greek.items()),
+                           encoding="utf-8")
+            shutil.rmtree(build / "media", ignore_errors=True)
+            run(base + ["-t", "latex", "-o", tex.name, "--extract-media=media", "-V", "geometry:margin=2.5cm",
+                        "-H", hdr.name], build, a.dry_run)
         produced = []
         for f in formats:
             target = out_dir / f"{name}.{f}"
-            if f == "pdf" and ref_docx:
-                docx = build / f"{name}.docx"
-                run(base + ["-o", str(docx), f"--reference-doc={root / ref_docx}"], answers.parent, a.dry_run)
-                run(["soffice", "--headless", "--convert-to", "pdf", "--outdir", str(out_dir), str(docx)],
-                    answers.parent, a.dry_run)
-            elif f == "pdf":
-                hdr = build / "keep-figures-in-place.tex"
-                # Latin Modern has no Greek glyphs, so typeset Unicode Greek (α = .05) in math mode.
-                greek = {"α": "alpha", "β": "beta", "χ": "chi", "δ": "delta", "ε": "epsilon", "η": "eta",
-                         "μ": "mu", "ρ": "rho", "σ": "sigma", "τ": "tau", "Δ": "Delta", "Σ": "Sigma"}
-                hdr.write_text("\\usepackage{float}\n\\floatplacement{figure}{H}\n\\usepackage{newunicodechar}\n"
-                               + "".join(f"\\newunicodechar{{{c}}}{{\\ensuremath{{\\{n}}}}}\n" for c, n in greek.items()),
-                               encoding="utf-8")
-                run(base + ["-o", str(target), "--pdf-engine=xelatex", "-V", "geometry:margin=2.5cm",
-                            "-H", str(hdr)], answers.parent, a.dry_run)
+            if f == "pdf":
+                xelatex(tex, a.dry_run)
+                if not a.dry_run:
+                    shutil.copyfile(tex.with_suffix(".pdf"), target)
+            elif f == "tex":
+                print(f"copy {rel(tex, root)} -> {rel(target, root)}")
+                if not a.dry_run:
+                    shutil.copyfile(tex, target)
+                    if (build / "media").is_dir():
+                        shutil.rmtree(out_dir / "media", ignore_errors=True)
+                        shutil.copytree(build / "media", out_dir / "media")
+                        print(f"copy {rel(build / 'media', root)} -> {rel(out_dir / 'media', root)}")
             elif f == "docx":
                 run(base + ["-o", str(target)] + ([f"--reference-doc={root / ref_docx}"] if ref_docx else []),
                     answers.parent, a.dry_run)

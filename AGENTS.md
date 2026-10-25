@@ -26,8 +26,7 @@ the files in `inputs/` into a graded, compliant submission in `export/`. Each st
 6. **`inputs/` is read-only.** Starter code is copied to `paths.code_dir` before you work on it.
 7. **Ask before installing anything**, before runs longer than `code.max_run_minutes`, before GPU use,
    and before overwriting changed facts in the details file.
-8. **Respect the unit's generative-AI policy** (`genai.*`). If it is `prohibited`, do not draft. If it is
-   `unclear`, ask first. Every skill appends one row to the AI-use log via `tools/log_ai_use.py`.
+8. **Log AI use.** Every skill appends one row to the AI-use log via `tools/log_ai_use.py`.
 9. **Australian English** (or whatever `spelling` says) in all generated text.
 10. **Don't commit.** Skills never `git commit`. The user commits after each stage.
 11. **Ignore `examples/`** unless the user asks about it. It is a fictional demo project.
@@ -80,11 +79,11 @@ names a skill, for example "answer-question Q2", "/answer-question Q2" or "answe
 | `tools/report_path.py <kind> [QID] [--latest]` | timestamped report paths |
 | `tools/fingerprint.py [QID]` | hashes for report frontmatter and no-edit checks |
 | `tools/log_ai_use.py` | append to the AI-use log |
-| `tools/export.py [--to] [--dry-run]` | pandoc export + `export/MANIFEST.md` |
+| `tools/export.py [--to] [--dry-run]` | pandoc export (PDF via LaTeX + xelatex) + `export/MANIFEST.md` |
 | `tools/validate_skills.py` | validate every SKILL.md |
 | `tools/selftest.py` | end-to-end test of the tools on `examples/` |
 
-External tools: pandoc (export), poppler `pdftotext` (PDF extraction), xelatex or LibreOffice (PDF output).
+External tools: pandoc (export), poppler `pdftotext` (PDF extraction), xelatex (compiles the LaTeX export to PDF).
 
 ## Layout
 

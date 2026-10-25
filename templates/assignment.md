@@ -39,8 +39,8 @@ referencing:
   notes: null                     # e.g. "minimum 10 peer-reviewed sources"
 
 format:
-  file_type: null                 # docx | pdf | md | html  (list allowed, e.g. [pdf, docx])
-  reference_docx: null            # optional styled .docx for pandoc (e.g. a university template)
+  file_type: null                 # docx | pdf | tex | md | html  (list allowed, e.g. [pdf, docx]); pdf is compiled from LaTeX
+  reference_docx: null            # optional styled .docx for pandoc docx output (e.g. a university template)
   font: null
   font_size: null
   line_spacing: null
@@ -70,9 +70,6 @@ code:
   max_run_minutes: 30             # runs longer than this need your approval
 
 genai:
-  policy: null                    # prohibited | restricted | permitted | unclear
-  permitted_uses: []              # quote the spec, e.g. [brainstorming, grammar feedback]
-  prohibited_uses: []
   acknowledgement_required: null  # true | false
   acknowledgement_format: null    # quote the required wording/format verbatim
   source: null
@@ -143,7 +140,7 @@ open_questions: []                # anything ambiguous; YOU fill in `answer`
 - Formatting: …
 - Spelling: …
 - Code and tools: …
-- Generative AI: policy …; acknowledgement …
+- Generative AI acknowledgement: …
 
 ## Open questions
 
