@@ -13,3 +13,4 @@ acknowledgement. export-submission builds the AI acknowledgement from this log.
 | 2026-10-25T10:59+11:00 | plan-question | TB | - | Planned structure and evidence | work/questions/TB/plan.md |  |
 | 2026-10-25T11:03+11:00 | plan-question | TB | - | Recorded student's design decisions D1-D6 in plan | work/questions/TB/plan.md |  |
 | 2026-10-25T11:06+11:00 | run-experiments | TB | - | Wrote code and ran experiments (power calculation) | work/code/src/power.py,  work/code/tests/test_power.py,  work/results/tables/TB-power.md,  work/results/tables/TB-power.json,  work/questions/TB/results.md |  |
+| 2026-10-25T11:09+11:00 | answer-question | TB | - | Drafted answer (draft mode) | answers/answers.md,  work/questions/TB/sources.md |  |

@@ -1,0 +1,34 @@
+## 0. Your Name & Student ID
+
+**Name:** Michael Rideout  
+**Student ID:** 36809268
+
+## 1. Proposed Hypothesis (< 50 words)
+
+Among Australians aged 18–30 who do not own a home, those who view a simulated social media feed of pessimistically framed housing posts will report a lower perceived likelihood of owning a home within ten years than those who view the same housing facts in neutral framing.
+
+## 2. Null Hypothesis (<50 words)
+
+Among Australians aged 18–30 who do not own a home, perceived likelihood of owning a home within ten years will not differ between those who view pessimistically framed housing posts and those who view the same housing facts in neutral framing.
+
+## 3. Independent, Dependent and Confounding Variables (< 50 words)
+
+- **Independent:** post framing (pessimistic or neutral), randomly assigned.
+- **Dependent:** perceived likelihood (0–100%) of owning a home within ten years.
+- **Confounding:** household income and savings; living arrangement (renting or with parents); capital-city versus regional location; prior weekly housing-content use. All are measured before exposure; randomisation balances them.
+
+## 4. Data Collection (< 100 words)
+
+An online between-subjects experiment will recruit 128 completers (64 per group). Voluntary-response convenience sampling suits the budget and an online population: Instagram and TikTok advertisements, university notices and community groups link to a survey platform screening age, residence and home ownership. Participants answer confounder questions, are randomly allocated, view eight mock posts with identical housing statistics across conditions, and rate ownership likelihood, tone (manipulation check) and an attention item before a debrief. Costs (AUD): incentives 640 (5 each), advertising 250, piloting and contingency 110. Hours: stimuli/pilot 25, ethics/setup 15, recruitment 25, analysis 15, reporting 20.
+
+## 5. Statistical Tests (< 150 words)
+
+Welch's independent-samples t-test will compare mean ownership likelihood between groups. It suits a between-subjects design with two independent groups and a continuous 0–100 outcome and, unlike Student's t-test, does not assume equal variances, which pessimistic framing may disturb by polarising responses. The test assumes independent observations (one response per person, random allocation), interval-level measurement and approximately normal scores within each group; if floor or ceiling clustering makes scores clearly non-normal, a Mann–Whitney U test will replace it. The hypothesis is directional because emotive, barrier-focused framing should make identical facts seem less surmountable, but the test is two-sided (α = .05) so an opposite effect is not missed. H0 is rejected if p < .05; H1 is supported only if the pessimistic mean is lower. The mean difference, 95% confidence interval and Cohen's d will be reported. Assuming a medium effect (d = 0.5), 64 per group gives 80% power.
+
+## 6. Limitations (< 200 words)
+
+A brief, researcher-made feed lacks the personalisation and repeated exposure of real platforms, so any effect may not transfer to everyday use; a multi-day field study with a browser-extension feed could test this. Self-selected online volunteers probably over-represent digitally engaged young people, which limits generalisation to all non-homeowners aged 18–30; quota sampling by state and income would reduce this bias. An immediate single-item rating may capture passing mood rather than a stable perception, and invites demand effects, so it could overstate lasting change; a delayed follow-up with a multi-item measure would show whether the effect persists.
+
+## 7. Alternative Narrative (< 50 words)
+
+"Housing pessimism reflects finances, not feeds" could be manufactured by recruiting only low-income Sydney and Melbourne renters, whose ratings sit near the floor, measuring likelihood a week after exposure, and reporting only the less powerful Mann–Whitney test. The resulting null difference would imply framing is irrelevant.
