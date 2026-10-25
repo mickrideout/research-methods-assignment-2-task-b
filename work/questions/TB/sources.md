@@ -1,6 +1,6 @@
 # Sources used: TB
 
-Updated by answer-question on 2026-10-25 · Section hash: 9f90cb64fd621a4d0ce30d5455ae1a1932f9c75af7e2cf2eddebaefbfb4b7c1b (revised from reports/grading/TB/20261025-111336.md)
+Updated by answer-question on 2026-10-25 · Section hash: 7f932cade198073ac0a9cfaee98c6ebd0193fda408dae2338265bc492d7c0155 (revised from reports/grading/TB/20261025-112832.md)
 
 No citations appear in the answer, since references are optional (inputs/clarifications/Assignment-2-faq.md#line.85), so `references.bib` is unused. The rows below trace each design claim to the inputs and results that justify it.
 
@@ -17,3 +17,4 @@ No citations appear in the answer, since references are optional (inputs/clarifi
 | inputs/clarifications/Assignment-2-faq.md | #line.69, #line.75–79 | Test justification and assumptions (§5); alternative narrative giving a specific result plus specific changes (§7); future work linked to limitations (§6) |
 | work/results/tables/TB-power.md | manifest run 20261025-110547-TB-power | "64 per group gives 80% power" at d = 0.5, two-sided α = .05 (§5); 128 completers (§4) |
 | — (design choices, not sourced facts) | §4 | Budget split (AUD 640 / 250 / 110) and hour split (25 / 15 / 25 / 15 / 20) are the student's planned allocations, not quoted prices |
+| — (design choice, not a sourced fact) | §4 | Qualtrics named as the survey platform (built-in randomiser, per plan §4); no claim is made about licence or cost |

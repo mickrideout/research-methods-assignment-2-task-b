@@ -16,3 +16,5 @@ acknowledgement. export-submission builds the AI acknowledgement from this log.
 | 2026-10-25T11:09+11:00 | answer-question | TB | - | Drafted answer (draft mode) | answers/answers.md,  work/questions/TB/sources.md |  |
 | 2026-10-25T11:15+11:00 | grade-question | TB | - | Graded against rubric | reports/grading/TB/20261025-111336.md |  |
 | 2026-10-25T11:20+11:00 | answer-question | TB | - | Revised answer (revise mode, from reports/grading/TB/20261025-111336.md) | answers/answers.md, work/questions/TB/sources.md |  |
+| 2026-10-25T11:29+11:00 | grade-question | TB | - | Graded against rubric | reports/grading/TB/20261025-112832.md |  |
+| 2026-10-25T11:32+11:00 | answer-question | TB | - | Revised answer (revise mode from reports/grading/TB/20261025-112832.md) | answers/answers.md, work/questions/TB/sources.md |  |
