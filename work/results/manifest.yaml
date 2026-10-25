@@ -1,0 +1,104 @@
+# Results manifest: written by tools/run_logged.py; do not edit by hand.
+runs:
+- id: 20261025-110506-TB-tests
+  name: TB-tests
+  qid: TB
+  command:
+  - python3
+  - -m
+  - pytest
+  - -q
+  - tests
+  cwd: work/code
+  started: '2026-10-25T11:05:06+11:00'
+  duration_s: 3.63
+  exit_code: 0
+  git_commit: 05189bd9f8e64d3cc02364f91f3f9ff0937e9c9a
+  git_dirty: true
+  log: work/results/logs/20261025-110506-TB-tests.log
+  outputs: []
+  note: ''
+  status: ok
+- id: 20261025-110514-TB-power
+  name: TB-power
+  qid: TB
+  command:
+  - python3
+  - src/power.py
+  - --d
+  - '0.5'
+  - --alpha
+  - '0.05'
+  - --power
+  - '0.80'
+  - --out-md
+  - ../results/tables/TB-power.md
+  - --out-json
+  - ../results/tables/TB-power.json
+  cwd: work/code
+  started: '2026-10-25T11:05:14+11:00'
+  duration_s: 2.28
+  exit_code: 0
+  git_commit: 05189bd9f8e64d3cc02364f91f3f9ff0937e9c9a
+  git_dirty: true
+  log: work/results/logs/20261025-110514-TB-power.log
+  outputs:
+  - path: work/results/tables/TB-power.md
+    sha256: bc8a0ae74f84690d8b2294563fa55367af66d1db499cc050d7b55e079c7cc02d
+    exists: true
+  - path: work/results/tables/TB-power.json
+    sha256: cc0d566d2764d8fe32d90bc222a0214cf75fbfa8361b14c4120ff9157ade2bef
+    exists: true
+  note: ''
+  status: ok
+- id: 20261025-110544-TB-tests
+  name: TB-tests
+  qid: TB
+  command:
+  - python3
+  - -m
+  - pytest
+  - -q
+  - tests
+  cwd: work/code
+  started: '2026-10-25T11:05:44+11:00'
+  duration_s: 3.63
+  exit_code: 0
+  git_commit: 05189bd9f8e64d3cc02364f91f3f9ff0937e9c9a
+  git_dirty: true
+  log: work/results/logs/20261025-110544-TB-tests.log
+  outputs: []
+  note: ''
+  status: ok
+- id: 20261025-110547-TB-power
+  name: TB-power
+  qid: TB
+  command:
+  - python3
+  - src/power.py
+  - --d
+  - '0.5'
+  - --alpha
+  - '0.05'
+  - --power
+  - '0.80'
+  - --out-md
+  - ../results/tables/TB-power.md
+  - --out-json
+  - ../results/tables/TB-power.json
+  cwd: work/code
+  started: '2026-10-25T11:05:48+11:00'
+  duration_s: 2.27
+  exit_code: 0
+  git_commit: 05189bd9f8e64d3cc02364f91f3f9ff0937e9c9a
+  git_dirty: true
+  log: work/results/logs/20261025-110547-TB-power.log
+  outputs:
+  - path: work/results/tables/TB-power.md
+    sha256: 21abb9c33214d43d7381e2755844768f445b413278a91dc31d3996d9617d42f7
+    exists: true
+  - path: work/results/tables/TB-power.json
+    sha256: 1b7f7822084b9e47aacaa420d2b61e0110fccd764f087cc5ec292993b623fb0a
+    exists: true
+  note: ''
+  status: ok

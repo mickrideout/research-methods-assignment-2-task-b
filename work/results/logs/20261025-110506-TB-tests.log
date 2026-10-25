@@ -1,0 +1,12 @@
+# command: python3 -m pytest -q tests
+# cwd: work/code
+# started: 2026-10-25T11:05:06+11:00
+# git: 05189bd9f8e64d3cc02364f91f3f9ff0937e9c9a dirty=True
+# python: 3.11.16 (/home/mick/bin/anaconda/envs/scratch/bin/python3)
+# platform: Linux-7.0.0-31-generic-x86_64-with-glibc2.39
+# timeout_min: 30
+
+/home/mick/bin/anaconda/envs/scratch/lib/python3.11/site-packages/opentelemetry/context/__init__.py:22: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import iter_entry_points
+.....                                                                    [100%]
+5 passed in 1.89s

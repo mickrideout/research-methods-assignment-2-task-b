@@ -12,3 +12,4 @@ acknowledgement. export-submission builds the AI acknowledgement from this log.
 | 2026-10-25T10:53+11:00 | enhance-rubric | TB | - | Incremental update: added Week 9 lecture summary as a source | context/rubric.yaml,  context/checklist.yaml |  |
 | 2026-10-25T10:59+11:00 | plan-question | TB | - | Planned structure and evidence | work/questions/TB/plan.md |  |
 | 2026-10-25T11:03+11:00 | plan-question | TB | - | Recorded student's design decisions D1-D6 in plan | work/questions/TB/plan.md |  |
+| 2026-10-25T11:06+11:00 | run-experiments | TB | - | Wrote code and ran experiments (power calculation) | work/code/src/power.py,  work/code/tests/test_power.py,  work/results/tables/TB-power.md,  work/results/tables/TB-power.json,  work/questions/TB/results.md |  |

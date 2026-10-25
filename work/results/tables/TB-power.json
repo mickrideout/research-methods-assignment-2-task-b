@@ -1,0 +1,57 @@
+{
+  "design": "two independent groups, two-sided test",
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "d": 0.5,
+  "n_per_group": 64,
+  "total_n": 128,
+  "analytic_power_at_n": 0.8014595579222541,
+  "planned_n_comparison": {
+    "60": {
+      "power_at_d": 0.7752658885125878,
+      "min_detectable_d": 0.5157065593923807
+    },
+    "64": {
+      "power_at_d": 0.8014595579222541,
+      "min_detectable_d": 0.4990691779658207
+    }
+  },
+  "sensitivity": [
+    {
+      "d": 0.4,
+      "power": 0.8,
+      "n_per_group": 100
+    },
+    {
+      "d": 0.4,
+      "power": 0.9,
+      "n_per_group": 133
+    },
+    {
+      "d": 0.5,
+      "power": 0.8,
+      "n_per_group": 64
+    },
+    {
+      "d": 0.5,
+      "power": 0.9,
+      "n_per_group": 86
+    },
+    {
+      "d": 0.6,
+      "power": 0.8,
+      "n_per_group": 45
+    },
+    {
+      "d": 0.6,
+      "power": 0.9,
+      "n_per_group": 60
+    }
+  ],
+  "simulation_at_n": {
+    "welch": 0.80245,
+    "mann_whitney": 0.77915,
+    "reps": 20000,
+    "seed": 20261025
+  }
+}
