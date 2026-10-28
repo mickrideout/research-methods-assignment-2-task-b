@@ -1,0 +1,187 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=2.5cm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{australian}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{newunicodechar}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{ε}{\ensuremath{\epsilon}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdflang={en-AU},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{name-student-id}{%
+\subsection{0. Name \& Student ID}\label{name-student-id}}
+
+Michael Rideout - 36809268
+
+\hypertarget{proposed-hypothesis}{%
+\subsection{1. Proposed Hypothesis}\label{proposed-hypothesis}}
+
+Among Australians aged 18--30 who do not own a home, those who view a
+simulated social media feed of pessimistically framed housing posts will
+report a lower perceived likelihood of owning a home within ten years
+than those who view the same housing facts in neutral framing.
+
+\hypertarget{null-hypothesis}{%
+\subsection{2. Null Hypothesis}\label{null-hypothesis}}
+
+Among Australians aged 18--30 who do not own a home, perceived
+likelihood of owning a home within ten years will not differ between
+those who view a simulated social media feed of pessimistically framed
+housing posts and those who view the same housing facts in neutral
+framing.
+
+\hypertarget{independent-dependent-and-confounding-variables}{%
+\subsection{3. Independent, Dependent and Confounding
+Variables}\label{independent-dependent-and-confounding-variables}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Independent:} post framing (pessimistic or neutral), randomly
+  assigned.
+\item
+  \textbf{Dependent:} perceived likelihood (0--100\%) of owning a home
+  within ten years.
+\item
+  \textbf{Confounding:} household income and savings; living arrangement
+  (renting or with parents); capital-city versus regional location;
+  prior weekly exposure to housing posts. All are measured before
+  exposure; randomisation balances them.
+\end{itemize}
+
+\hypertarget{data-collection-100-words}{%
+\subsection{4. Data Collection (\textless{} 100
+words)}\label{data-collection-100-words}}
+
+An online between-subjects experiment will recruit 128 valid completers
+(64 per group). Voluntary-response convenience sampling is cheap and
+reaches young non-homeowners online. Instagram and TikTok
+advertisements, university notices and community groups link to a
+Qualtrics survey screening age, residence and home ownership.
+Participants answer confounder questions, are randomly allocated, view
+eight mock posts with identical housing statistics across conditions,
+and rate ownership likelihood, tone (manipulation check) and an
+attention item before a debrief. Costs (AUD): incentives 640 (5 each),
+advertising 250, piloting and contingency 110. Hours: stimuli/pilot 25,
+ethics/setup 15, recruitment 25, analysis 15, reporting 20.
+
+\hypertarget{statistical-tests-150-words}{%
+\subsection{5. Statistical Tests (\textless{} 150
+words)}\label{statistical-tests-150-words}}
+
+Welch's independent-samples t-test will compare mean ownership
+likelihood between groups. It suits a between-subjects design with two
+independent groups and a continuous 0--100 outcome. Unlike Student's
+t-test, it does not assume equal variances, which pessimistic framing
+may widen by polarising responses. The test assumes independent
+observations (one response per person, random allocation),
+interval-level measurement and approximately normal scores within each
+group; if Q--Q plots show floor or ceiling clustering, a Mann--Whitney U
+test, which compares rank distributions, will replace it. The hypothesis
+is directional because emotive, barrier-focused framing should make
+identical facts seem less surmountable, but the test is two-sided (α =
+.05) so an opposite effect is not missed. H0 is rejected if p
+\textless{} .05; H1 is supported only if the pessimistic mean is lower.
+The mean difference, 95\% CI and Cohen's d will be reported. Assuming a
+medium effect (d = 0.5), 64 per group gives 80\% power.
+
+\hypertarget{limitations-200-words}{%
+\subsection{6. Limitations (\textless{} 200
+words)}\label{limitations-200-words}}
+
+A brief, researcher-made feed lacks the personalisation and repeated
+exposure of real platforms, so any effect may not transfer to everyday
+use; a multi-day field study with a browser-extension feed could test
+this. Self-selected online volunteers probably over-represent digitally
+engaged young people, which limits generalisation to all non-homeowners
+aged 18--30; recruiting offline at TAFE campuses and workplaces would
+reach less digitally engaged peers. An immediate single-item rating may
+capture passing mood rather than a stable perception and invite demand
+effects that overstate lasting change; a delayed follow-up with a
+multi-item measure would show whether the effect persists.
+
+\hypertarget{alternative-narrative-50-words}{%
+\subsection{7. Alternative Narrative (\textless{} 50
+words)}\label{alternative-narrative-50-words}}
+
+``Housing pessimism reflects finances, not feeds'' could be manufactured
+by recruiting only low-income capital-city renters, whose near-floor
+ratings leave framing no room; measuring likelihood a week later, so
+effects fade; and excluding pessimistic-condition participants who
+passed the manipulation check. Equal near-floor group means would then
+`show' framing is irrelevant.
+
+\end{document}

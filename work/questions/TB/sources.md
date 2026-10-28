@@ -1,6 +1,6 @@
 # Sources used: TB
 
-Updated by answer-question on 2026-10-25 · Section hash: 7f932cade198073ac0a9cfaee98c6ebd0193fda408dae2338265bc492d7c0155 (revised from reports/grading/TB/20261025-112832.md)
+Updated by answer-question on 2026-10-28 · Section hash: b0980cf4e93e3a8157b4f750ada29a801d2dd68084fbe81c6b9f5f31f212b43f (revised heading 5 only, fix 6 from reports/grading/assignment/20261028-180737.md; headings 0–4 and 6–7 are the student's hand edits, unchanged)
 
 No citations appear in the answer, since references are optional (inputs/clarifications/Assignment-2-faq.md#line.85), so `references.bib` is unused. The rows below trace each design claim to the inputs and results that justify it.
 
@@ -15,6 +15,6 @@ No citations appear in the answer, since references are optional (inputs/clarifi
 | inputs/lectures/week-9-summary.md | #line.191, #line.195 | Test chosen by number of groups, design and assumptions; Welch's vs Student's; Mann–Whitney fallback (§5) |
 | inputs/lectures/week-9-summary.md | #line.205–206 | Selection bias (restricted sample) and cherry-picking (selective exclusion after the manipulation check) as the manipulations in §7 |
 | inputs/clarifications/Assignment-2-faq.md | #line.69, #line.75–79 | Test justification and assumptions (§5); alternative narrative giving a specific result plus specific changes (§7); future work linked to limitations (§6) |
-| work/results/tables/TB-power.md | manifest run 20261025-110547-TB-power | "64 per group gives 80% power" at d = 0.5, two-sided α = .05 (§5); 128 completers (§4) |
+| work/results/tables/TB-power.md | manifest run 20261025-110547-TB-power | "64 per group gives 80% power" at d = 0.5, two-sided α = .05 (§5), restored 2026-10-28 to justify the 128 completers in §4 |
 | — (design choices, not sourced facts) | §4 | Budget split (AUD 640 / 250 / 110) and hour split (25 / 15 / 25 / 15 / 20) are the student's planned allocations, not quoted prices |
 | — (design choice, not a sourced fact) | §4 | Qualtrics named as the survey platform (built-in randomiser, per plan §4); no claim is made about licence or cost |

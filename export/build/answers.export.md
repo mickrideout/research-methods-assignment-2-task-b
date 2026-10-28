@@ -1,9 +1,3 @@
----
-title: "FIT5125 : Task B: Working with Hypotheses"
-author: "Michael Rideout (36809268)"
-lang: en-AU
----
-
 <!--
 COMMON ANSWER FILE. Do not edit sections by hand while an agent is working; write
 sections only with:  python3 tools/answer_section.py put <ID> --from <draft.md>
@@ -15,20 +9,19 @@ The sample sections below are replaced by `answer_section.py init`, which
 generates one section per question in context/assignment.md.
 -->
 
-## 0. Your Name & Student ID
+## 0. Name & Student ID
 
-**Name:** Michael Rideout  
-**Student ID:** 36809268
+Michael Rideout - 36809268
 
-## 1. Proposed Hypothesis (< 50 words)
+## 1. Proposed Hypothesis
 
 Among Australians aged 18–30 who do not own a home, those who view a simulated social media feed of pessimistically framed housing posts will report a lower perceived likelihood of owning a home within ten years than those who view the same housing facts in neutral framing.
 
-## 2. Null Hypothesis (<50 words)
+## 2. Null Hypothesis
 
 Among Australians aged 18–30 who do not own a home, perceived likelihood of owning a home within ten years will not differ between those who view a simulated social media feed of pessimistically framed housing posts and those who view the same housing facts in neutral framing.
 
-## 3. Independent, Dependent and Confounding Variables (< 50 words)
+## 3. Independent, Dependent and Confounding Variables
 
 - **Independent:** post framing (pessimistic or neutral), randomly assigned.
 - **Dependent:** perceived likelihood (0–100%) of owning a home within ten years.
